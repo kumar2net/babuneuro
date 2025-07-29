@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurosurgery & Neurotechnology Advancements</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e5e7eb;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #9ca3af;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b7280;
+        }
+
+        /* Modal specific styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none; /* Allows clicks through when hidden */
+        }
+
+        .modal.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            margin: auto;
+            padding: 2.5rem; /* Increased padding */
+            border-radius: 1.5rem; /* More rounded */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 90%; /* Responsive width */
+            max-width: 600px; /* Max width for larger screens */
+            position: relative;
+            transform: translateY(-20px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .modal.show .modal-content {
+            transform: translateY(0);
+        }
+
+        .close-button {
+            color: #9ca3af;
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 2rem; /* Larger close button */
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: #ef4444; /* Red on hover */
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">
+                Neuro-Frontiers
+            </h1>
+            <p class="text-lg md:text-xl font-light opacity-90">
+                Pioneering Advancements in Neurosurgery & Neurotechnology
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow container mx-auto px-4 py-12">
+        <section class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                Explore Breakthroughs
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Discover how cutting-edge neurotechnology is revolutionizing surgical precision, patient recovery, and our understanding of the human brain. Click on any card to learn more.
+            </p>
+        </section>
+
+        <!-- Grid of Feature Boxes -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Box 1: AI-Powered Precision Surgery -->
+            <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="AI-Powered Precision Surgery" data-content="<h3 class='text-2xl font-semibold text-gray-900 mb-4'>Unprecedented Accuracy</h3><p class='text-gray-700 leading-relaxed'>AI-driven navigation and imaging systems guide neurosurgeons with sub-millimeter precision. This means safer procedures, optimized tumor removal, and preservation of vital brain function.</p><p class='text-sm text-gray-500 mt-4'>Keywords: AI, Surgical Robotics, Image-Guided, Minimal Invasion.</p>">
+                <div class="flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-600 rounded-full mb-6 mx-auto">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1.25-3M15 10V5a3 3 0 00-3-3M4 7v4a3 3 0 003 3h10a3 3 0 003-3V7M6 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4 0V5a3 3 0 00-3-3h-2a3 3 0 00-3 3v2M9 7h6"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">AI-Powered Precision Surgery</h3>
+                <p class="text-gray-600 text-center">Enhancing surgical accuracy with intelligent systems.</p>
+            </div>
+
+            <!-- Box 2: Brain-Computer Interfaces (BCIs) -->
+            <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="Brain-Computer Interfaces (BCIs)" data-content="<h3 class='text-2xl font-semibold text-gray-900 mb-4'>Restoring Lost Connection</h3><p class='text-gray-700 leading-relaxed'>BCIs are bridging the gap between mind and machine. For paralysis, they enable direct control of prosthetics or computers. For neurological disorders, they offer new avenues for communication and functional recovery.</p><p class='text-sm text-gray-500 mt-4'>Keywords: Neural Implants, Prosthetics, Communication, Rehabilitation.</p>">
+                <div class="flex items-center justify-center w-16 h-16 bg-purple-100 text-purple-600 rounded-full mb-6 mx-auto">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Brain-Computer Interfaces (BCIs)</h3>
+                <p class="text-gray-600 text-center">Direct communication between brain and external devices.</p>
+            </div>
+
+            <!-- Box 3: Advanced Neuromodulation -->
+            <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="Advanced Neuromodulation" data-content="<h3 class='text-2xl font-semibold text-gray-900 mb-4'>Tailored Brain Therapy</h3><p class='text-gray-700 leading-relaxed'>Devices like adaptive Deep Brain Stimulation (DBS) and focused ultrasound dynamically adjust to brain signals, providing personalized relief for conditions like Parkinson's, epilepsy, and chronic pain.</p><p class='text-sm text-gray-500 mt-4'>Keywords: DBS, Neurostimulators, Targeted Therapy, Epilepsy, Parkinson's.</p>">
+                <div class="flex items-center justify-center w-16 h-16 bg-green-100 text-green-600 rounded-full mb-6 mx-auto">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Advanced Neuromodulation</h3>
+                <p class="text-gray-600 text-center">Personalized therapies for neurological conditions.</p>
+            </div>
+
+            <!-- Box 4: Minimally Invasive Techniques -->
+            <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="Minimally Invasive Techniques" data-content="<h3 class='text-2xl font-semibold text-gray-900 mb-4'>Faster Recovery, Less Trauma</h3><p class='text-gray-700 leading-relaxed'>Laser Interstitial Thermal Therapy (LITT) and endovascular procedures allow complex brain and spine interventions through tiny incisions. Patients experience reduced pain, shorter hospital stays, and quicker healing.</p><p class='text-sm text-gray-500 mt-4'>Keywords: LITT, Endovascular, Keyhole Surgery, Rapid Recovery.</p>">
+                <div class="flex items-center justify-center w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full mb-6 mx-auto">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c.045 4.357 3.07 7.925 7.61 10.902a12.007 12.007 0 008.44-10.902c-.045-4.357-3.07-7.925-7.61-10.902z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Minimally Invasive Techniques</h3>
+                <p class="text-gray-600 text-center">Revolutionizing surgery with smaller incisions.</p>
+            </div>
+
+            <!-- Box 5: Intraoperative Mapping & Monitoring -->
+            <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="Intraoperative Mapping & Monitoring" data-content="<h3 class='text-2xl font-semibold text-gray-900 mb-4'>Real-Time Brain Insight</h3><p class='text-gray-700 leading-relaxed'>High-resolution imaging and real-time brain mapping during surgery protect critical areas. Surgeons can visualize pathways and avoid damage, ensuring optimal patient outcomes.</p><p class='text-sm text-gray-500 mt-4'>Keywords: Neuro-Navigation, Functional Mapping, Patient Safety, Enhanced Vision.</p>">
+                <div class="flex items-center justify-center w-16 h-16 bg-red-100 text-red-600 rounded-full mb-6 mx-auto">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Intraoperative Mapping & Monitoring</h3>
+                <p class="text-gray-600 text-center">Live insights during surgery for enhanced safety.</p>
+            </div>
+
+            <!-- Box 6: Regenerative Neuroscience -->
+            <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="Regenerative Neuroscience" data-content="<h3 class='text-2xl font-semibold text-gray-900 mb-4'>Repairing the Brain</h3><p class='text-gray-700 leading-relaxed'>Emerging therapies in gene editing and stem cell research aim to repair damaged neural tissue, offering hope for conditions like spinal cord injury, stroke, and neurodegenerative diseases.</p><p class='text-sm text-gray-500 mt-4'>Keywords: Gene Therapy, Stem Cells, Neural Repair, Future Therapies.</p>">
+                <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full mb-6 mx-auto">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Regenerative Neuroscience</h3>
+                <p class="text-gray-600 text-center">Pioneering new ways to heal and restore neural function.</p>
+            </div>
+
+            <!-- New Box: Deep Learning in Neuroscience -->
+            <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="Deep Learning in Neuroscience" data-content="<h3 class='text-2xl font-semibold text-gray-900 mb-4'>Unlocking Brain Complexity</h3><p class='text-gray-700 leading-relaxed'>Deep Learning, including Graph Neural Networks (GNNs), is transforming neuroscience by analyzing complex brain data. GNNs are particularly powerful for modeling brain connectivity and disease progression, leading to enhanced diagnostics and personalized treatment predictions.</p><p class='text-sm text-gray-500 mt-4'>Keywords: Deep Learning, Graph Neural Networks, Brain Mapping, Diagnostics, Predictive Analytics.</p>">
+                <div class="flex items-center justify-center w-16 h-16 bg-teal-100 text-teal-600 rounded-full mb-6 mx-auto">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Deep Learning in Neuroscience</h3>
+                <p class="text-gray-600 text-center">Leveraging AI to understand and treat the brain.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="featureModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2 id="modalTitle" class="text-3xl font-bold text-gray-900 mb-6"></h2>
+            <div id="modalContent" class="text-lg text-gray-700"></div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm opacity-80">© 2025 Neuro-Frontiers. All rights reserved.</p>
+            <p class="text-xs opacity-70 mt-2">Innovating for a healthier future.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get the modal, buttons, and span elements
+        const modal = document.getElementById('featureModal');
+        const closeButton = document.querySelector('.close-button');
+        const featureBoxes = document.querySelectorAll('.feature-box');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+
+        // Function to open the modal
+        function openModal(title, content) {
+            modalTitle.textContent = title;
+            modalContent.innerHTML = content; // Use innerHTML to render HTML content
+            modal.classList.add('show');
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            modal.classList.remove('show');
+            // Clear content after animation to prevent flicker on next open
+            setTimeout(() => {
+                modalTitle.textContent = '';
+                modalContent.innerHTML = '';
+            }, 300);
+        }
+
+        // Event listeners for opening modal
+        featureBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const title = box.dataset.title;
+                const content = box.dataset.content;
+                openModal(title, content);
+            });
+        });
+
+        // Event listener for closing modal via close button
+        closeButton.addEventListener('click', closeModal);
+
+        // Event listener for closing modal when clicking outside the content
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Event listener for keyboard 'Escape' key to close modal
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && modal.classList.contains('show')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
