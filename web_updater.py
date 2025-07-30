@@ -71,7 +71,7 @@ class WebUpdater:
         return html_content
     
     def generate_recent_papers_html(self, limit: int = 5) -> str:
-        """Generate HTML for recent papers."""
+        """Generate HTML for recent papers as cards."""
         if not self.data.get('research_cycles'):
             return ""
         
@@ -81,35 +81,76 @@ class WebUpdater:
         if not papers:
             return "<p>No recent papers available.</p>"
         
+        # Category info for icons and colors
+        category_info = {
+            'neural_implants': {'icon': '🧠', 'color': 'from-blue-400 to-blue-600'},
+            'surgical_ai': {'icon': '🔬', 'color': 'from-purple-400 to-purple-600'},
+            'neuroimaging': {'icon': '📊', 'color': 'from-green-400 to-green-600'},
+            'neuromodulation': {'icon': '⚡', 'color': 'from-yellow-400 to-yellow-600'},
+            'diagnosis_prediction': {'icon': '🔍', 'color': 'from-red-400 to-red-600'},
+            'brain_connectivity': {'icon': '🌐', 'color': 'from-indigo-400 to-indigo-600'},
+            'other': {'icon': '📄', 'color': 'from-gray-400 to-gray-600'}
+        }
+        
         html_content = """
         <div class="recent-papers">
-            <h4 class="text-xl font-semibold text-gray-900 mb-4">Recent Research Papers</h4>
-            <div class="space-y-3">
+            <h4 class="text-xl font-semibold text-gray-900 mb-6 text-center">📚 Recent Research Papers</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
         """
         
         for paper in papers:
             title = paper.get('title', 'Untitled')
-            authors = ', '.join(paper.get('authors', [])[:3])
-            if len(paper.get('authors', [])) > 3:
+            authors = ', '.join(paper.get('authors', [])[:2])
+            if len(paper.get('authors', [])) > 2:
                 authors += " et al."
             journal = paper.get('journal', 'Unknown Journal')
             year = paper.get('year', 'Unknown')
             url = paper.get('url', '#')
-            categories = ', '.join(paper.get('categories', []))
-            models = ', '.join(paper.get('models_mentioned', []))
+            categories = paper.get('categories', [])
+            models = paper.get('models_mentioned', [])
+            
+            # Get primary category for icon
+            primary_category = categories[0] if categories else 'other'
+            cat_info = category_info.get(primary_category, category_info['other'])
+            
+            # Truncate title for card display
+            truncated_title = title if len(title) <= 70 else title[:70] + '...'
             
             html_content += f"""
-                <div class="paper-item bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-                    <h5 class="font-semibold text-gray-900 mb-2">
-                        <a href="{url}" target="_blank" class="text-blue-600 hover:text-blue-800">{title}</a>
+                <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                    <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-r {cat_info['color']} rounded-full mb-4 mx-auto">
+                        <span class="text-white text-xl">{cat_info['icon']}</span>
+                    </div>
+                    <h5 class="font-semibold text-gray-900 mb-2 text-center leading-tight text-sm">
+                        <a href="{url}" target="_blank" class="text-gray-900 hover:text-blue-600 transition-colors">{truncated_title}</a>
                     </h5>
-                    <p class="text-sm text-gray-600 mb-2">{authors} • {journal} ({year})</p>
-                    {f'<div class="text-xs text-purple-600 mb-1"><strong>Categories:</strong> {categories}</div>' if categories else ''}
-                    {f'<div class="text-xs text-green-600"><strong>Models:</strong> {models}</div>' if models else ''}
+                    <p class="text-xs text-gray-600 text-center mb-3">{authors}<br><span class="font-medium">{journal}</span> ({year})</p>
+                    
+                    {f'''
+                    <div class="flex flex-wrap justify-center gap-1 mb-2">
+                        {' '.join([f'<span class="px-2 py-1 bg-purple-50 text-purple-700 rounded-full text-xs">{cat.replace("_", " ")}</span>' for cat in categories[:2]])}
+                        {f'<span class="text-xs text-gray-500">+{len(categories)-2}</span>' if len(categories) > 2 else ''}
+                    </div>
+                    ''' if categories else ''}
+                    
+                    {f'''
+                    <div class="flex flex-wrap justify-center gap-1">
+                        {' '.join([f'<span class="px-2 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">{model.upper()}</span>' for model in models[:2]])}
+                        {f'<span class="text-xs text-gray-500">+{len(models)-2}</span>' if len(models) > 2 else ''}
+                    </div>
+                    ''' if models else ''}
                 </div>
             """
         
         html_content += """
+            </div>
+            <div class="text-center">
+                <a href="research.html" class="inline-flex items-center px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors text-sm font-medium">
+                    View All Papers
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
             </div>
         </div>
         """
@@ -132,8 +173,38 @@ class WebUpdater:
         
         {recent_papers}
         
-        <div class="mt-6 p-4 bg-gray-50 rounded-lg">
-            <p class='text-sm text-gray-600'><strong>Key Technologies:</strong> Graph Neural Networks for brain connectivity, Transformers for neural signal processing, CNNs for neuroimaging analysis, and multimodal AI for comprehensive brain understanding.</p>
+        <div class="mt-6">
+            <h4 class="text-lg font-semibold text-gray-900 mb-4 text-center">🔑 Key Technologies</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-3 rounded-lg border border-blue-100">
+                    <div class="flex items-center mb-2">
+                        <span class="text-lg mr-2">🌐</span>
+                        <h5 class="font-semibold text-blue-900 text-sm">Graph Neural Networks</h5>
+                    </div>
+                    <p class="text-xs text-blue-800">Advanced AI for mapping brain connectivity and neural pathways</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-3 rounded-lg border border-purple-100">
+                    <div class="flex items-center mb-2">
+                        <span class="text-lg mr-2">🎯</span>
+                        <h5 class="font-semibold text-purple-900 text-sm">Transformers</h5>
+                    </div>
+                    <p class="text-xs text-purple-800">Attention-based models for neural signal processing</p>
+                </div>
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-3 rounded-lg border border-green-100">
+                    <div class="flex items-center mb-2">
+                        <span class="text-lg mr-2">👁️</span>
+                        <h5 class="font-semibold text-green-900 text-sm">CNNs</h5>
+                    </div>
+                    <p class="text-xs text-green-800">Convolutional networks for neuroimaging analysis</p>
+                </div>
+                <div class="bg-gradient-to-r from-orange-50 to-red-50 p-3 rounded-lg border border-orange-100">
+                    <div class="flex items-center mb-2">
+                        <span class="text-lg mr-2">🔗</span>
+                        <h5 class="font-semibold text-orange-900 text-sm">Multimodal AI</h5>
+                    </div>
+                    <p class="text-xs text-orange-800">Integrated AI for comprehensive brain understanding</p>
+                </div>
+            </div>
         </div>"""
         
         # Find and update the Deep Learning section
