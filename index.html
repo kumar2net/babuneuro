@@ -290,7 +290,58 @@
 
             <!-- Deep Learning in Neuroscience -->
             <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="Deep Learning in Neuroscience" data-content="
-        <div class=\"max-h-96 overflow-y-auto\">
+        <div class=\"grid grid-cols-1 sm:grid-cols-2 gap-4\">
+            <!-- GNN Card -->
+            <div class=\"bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer\" onclick=\"showFeynmanExplanation('gnn')\">
+                <div class=\"text-center\">
+                    <div class=\"text-3xl mb-3\">🌐</div>
+                    <div class=\"font-bold text-lg mb-2\">Graph Neural Networks</div>
+                    <div class=\"text-sm opacity-90 mb-3\">Brain connectivity mapping</div>
+                    <div class=\"text-xs opacity-75\">🧠 Tap for Feynman explanation</div>
+                </div>
+            </div>
+            
+            <!-- Transformers Card -->
+            <div class=\"bg-gradient-to-br from-purple-500 to-pink-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer\" onclick=\"showFeynmanExplanation('transformers')\">
+                <div class=\"text-center\">
+                    <div class=\"text-3xl mb-3\">🎯</div>
+                    <div class=\"font-bold text-lg mb-2\">Transformers</div>
+                    <div class=\"text-sm opacity-90 mb-3\">Neural signal processing</div>
+                    <div class=\"text-xs opacity-75\">🧠 Tap for Feynman explanation</div>
+                </div>
+            </div>
+            
+            <!-- CNNs Card -->
+            <div class=\"bg-gradient-to-br from-green-500 to-emerald-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer\" onclick=\"showFeynmanExplanation('cnns')\">
+                <div class=\"text-center\">
+                    <div class=\"text-3xl mb-3\">👁️</div>
+                    <div class=\"font-bold text-lg mb-2\">CNNs</div>
+                    <div class=\"text-sm opacity-90 mb-3\">Neuroimaging analysis</div>
+                    <div class=\"text-xs opacity-75\">🧠 Tap for Feynman explanation</div>
+                </div>
+            </div>
+            
+            <!-- Multimodal AI Card -->
+            <div class=\"bg-gradient-to-br from-orange-500 to-red-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer\" onclick=\"showFeynmanExplanation('multimodal')\">
+                <div class=\"text-center\">
+                    <div class=\"text-3xl mb-3\">🔗</div>
+                    <div class=\"font-bold text-lg mb-2\">Multimodal AI</div>
+                    <div class=\"text-sm opacity-90 mb-3\">Comprehensive analysis</div>
+                    <div class=\"text-xs opacity-75\">🧠 Tap for Feynman explanation</div>
+                </div>
+            </div>
+            
+            <!-- Research Papers Card -->
+            <div class=\"sm:col-span-2\">
+                <a href=\"research.html\" class=\"block bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1\">
+                    <div class=\"text-center\">
+                        <div class=\"text-3xl mb-3\">📄</div>
+                        <div class=\"font-bold text-lg mb-2\">Explore Research Papers</div>
+                        <div class=\"text-sm opacity-90\">View 45 papers with detailed analysis</div>
+                    </div>
+                </a>
+            </div>
+        </div>"max-h-96 overflow-y-auto\">
             <h3 class=\"text-2xl font-bold text-center text-gray-900 mb-6\">🧠 Deep Learning in Neuroscience</h3>
             
             <!-- Quick Stats -->
@@ -697,6 +748,17 @@
         </div>
     </div>
 
+        <!-- Research Status Indicator -->
+        <div class="fixed bottom-4 right-4 bg-white rounded-lg shadow-lg p-3 border border-gray-200 z-50">
+            <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <div class="text-xs text-gray-600">
+                    <div class="font-semibold">Research Updated</div>
+                    <div>Jul 30, 2025</div>
+                </div>
+            </div>
+        </div>
+        
         <!-- Research Status Indicator -->
         <div class="fixed bottom-4 right-4 bg-white rounded-lg shadow-lg p-3 border border-gray-200 z-50">
             <div class="flex items-center space-x-2">
