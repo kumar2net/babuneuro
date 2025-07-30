@@ -295,10 +295,46 @@
             </div>
 
             <!-- New Box: Deep Learning in Neuroscience -->
-            <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="Deep Learning in Neuroscience" data-content="<h3 class='text-2xl font-semibold text-gray-900 mb-4 text-center'>🧠 AI-Powered Brain Research</h3>
-        <p class='text-gray-700 leading-relaxed mb-6 text-center'>Deep Learning is revolutionizing neuroscience by analyzing complex brain data, improving surgical precision, and enabling breakthrough discoveries in neural interfaces and brain connectivity analysis.</p>
-        
-        <div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6\">
+            <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="Deep Learning in Neuroscience" data-content="
+        <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4\">
+            <!-- Quick Stats Card -->
+            <div class=\"bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer\">
+                <div class=\"text-center\">
+                    <div class=\"text-3xl font-bold mb-1\">45</div>
+                    <div class=\"text-sm opacity-90 mb-2\">Papers This Week</div>
+                    <div class=\"text-xs opacity-75\">Latest Research</div>
+                </div>
+            </div>
+            
+            <!-- AI Models Card -->
+            <div class=\"bg-gradient-to-br from-green-500 to-emerald-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer\">
+                <div class=\"text-center\">
+                    <div class=\"text-2xl mb-2\">🤖</div>
+                    <div class=\"font-semibold mb-1\">AI Models</div>
+                    <div class=\"text-xs opacity-90\">GNN • CNN • Transformers</div>
+                </div>
+            </div>
+            
+            <!-- Research Areas Card -->
+            <div class=\"bg-gradient-to-br from-orange-500 to-red-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer\">
+                <div class=\"text-center\">
+                    <div class=\"text-2xl mb-2\">🧠</div>
+                    <div class=\"font-semibold mb-1\">Research Areas</div>
+                    <div class=\"text-xs opacity-90\">Neural • Imaging • Surgery</div>
+                </div>
+            </div>
+            
+            <!-- Explore Papers Card -->
+            <div class=\"sm:col-span-2 lg:col-span-3\">
+                <a href=\"research.html\" class=\"block bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1\">
+                    <div class=\"text-center\">
+                        <div class=\"text-2xl mb-2\">📄</div>
+                        <div class=\"text-lg font-semibold mb-1\">Explore All Research Papers</div>
+                        <div class=\"text-sm opacity-90\">View detailed papers with Feynman explanations</div>
+                    </div>
+                </a>
+            </div>
+        </div>"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6\">
             <!-- Research Stats Card -->
             <div class=\"bg-gradient-to-br from-blue-500 to-purple-600 text-white p-4 rounded-xl shadow-lg\">
                 <div class=\"text-center\">
@@ -711,6 +747,17 @@
         });
     </script>
 
+        <!-- Research Status Indicator -->
+        <div class="fixed bottom-4 right-4 bg-white rounded-lg shadow-lg p-3 border border-gray-200 z-50">
+            <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <div class="text-xs text-gray-600">
+                    <div class="font-semibold">Research Updated</div>
+                    <div>Jul 30, 2025</div>
+                </div>
+            </div>
+        </div>
+        
         <!-- Research Status Indicator -->
         <div class="fixed bottom-4 right-4 bg-white rounded-lg shadow-lg p-3 border border-gray-200 z-50">
             <div class="flex items-center space-x-2">
