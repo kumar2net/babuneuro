@@ -29,6 +29,88 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #6b7280;
         }
+        
+        /* Hamburger menu styles */
+        .hamburger {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            transition: all 0.25s;
+            position: relative;
+        }
+        
+        .hamburger-top,
+        .hamburger-middle,
+        .hamburger-bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 2px;
+            background: white;
+            transform: rotate(0);
+            transition: all 0.5s;
+        }
+        
+        .hamburger-middle {
+            transform: translateY(7px);
+        }
+        
+        .hamburger-bottom {
+            transform: translateY(14px);
+        }
+        
+        .open .hamburger-top {
+            transform: rotate(45deg) translateY(6px) translateX(6px);
+        }
+        
+        .open .hamburger-middle {
+            display: none;
+        }
+        
+        .open .hamburger-bottom {
+            transform: rotate(-45deg) translateY(6px) translateX(-6px);
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            z-index: 1000;
+            transition: left 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .mobile-menu.open {
+            left: 0;
+        }
+        
+        .mobile-menu a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            text-decoration: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.open a {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .mobile-menu.open a:nth-child(1) { transition-delay: 0.1s; }
+        .mobile-menu.open a:nth-child(2) { transition-delay: 0.2s; }
+        .mobile-menu.open a:nth-child(3) { transition-delay: 0.3s; }
+        .mobile-menu.open a:nth-child(4) { transition-delay: 0.4s; }
 
         /* Modal specific styles */
         .modal {
@@ -92,31 +174,70 @@
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- Header Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-6 shadow-lg">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">
-                Neuro-Frontiers
-            </h1>
-            <p class="text-lg md:text-xl font-light opacity-90">
+    <!-- Header Section with Navigation -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white shadow-lg relative z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <h1 class="text-2xl md:text-3xl font-bold">
+                    Neuro-Frontiers
+                </h1>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-blue-200 font-semibold">Home</a>
+                <a href="research.html" class="hover:text-blue-200 transition-colors">Research</a>
+                <a href="#about" class="hover:text-blue-200 transition-colors">About</a>
+                <a href="#contact" class="hover:text-blue-200 transition-colors">Contact</a>
+            </nav>
+            
+            <!-- Mobile Hamburger -->
+            <div class="md:hidden">
+                <button id="hamburger" class="hamburger">
+                    <div class="hamburger-top"></div>
+                    <div class="hamburger-middle"></div>
+                    <div class="hamburger-bottom"></div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Subtitle for larger screens -->
+        <div class="hidden md:block text-center pb-4">
+            <p class="text-lg font-light opacity-90">
                 Pioneering Advancements in Neurosurgery & Neurotechnology
             </p>
         </div>
     </header>
 
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">🏠 Home</a>
+        <a href="research.html">📄 Research</a>
+        <a href="#about">ℹ️ About</a>
+        <a href="#contact">📧 Contact</a>
+    </div>
+
     <!-- Main Content Section -->
-    <main class="flex-grow container mx-auto px-4 py-12">
-        <section class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+    <main class="flex-grow container mx-auto px-4 py-8 md:py-12">
+        <section class="text-center mb-8 md:mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6">
                 Explore Breakthroughs
             </h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
                 Discover how cutting-edge neurotechnology is revolutionizing surgical precision, patient recovery, and our understanding of the human brain. Click on any card to learn more.
             </p>
+            <div class="mt-6">
+                <a href="research.html" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    📄 View Latest Research Papers
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
         </section>
 
-        <!-- Grid of Feature Boxes -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Grid of Feature Boxes - Mobile First -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
             <!-- Box 1: AI-Powered Precision Surgery -->
             <div class="feature-box bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer" data-title="AI-Powered Precision Surgery" data-content="<h3 class='text-2xl font-semibold text-gray-900 mb-4'>Unprecedented Accuracy</h3><p class='text-gray-700 leading-relaxed'>AI-driven navigation and imaging systems guide neurosurgeons with sub-millimeter precision. This means safer procedures, optimized tumor removal, and preservation of vital brain function.</p><p class='text-sm text-gray-500 mt-4'>Keywords: AI, Surgical Robotics, Image-Guided, Minimal Invasion.</p>">
@@ -284,6 +405,23 @@
     </footer>
 
     <script>
+        // Mobile menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+        
+        // Close mobile menu when clicking on a link
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                hamburger.classList.remove('open');
+                mobileMenu.classList.remove('open');
+            }
+        });
+        
         // Get the modal, buttons, and span elements
         const modal = document.getElementById('featureModal');
         const closeButton = document.querySelector('.close-button');
