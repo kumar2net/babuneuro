@@ -54,44 +54,150 @@ class WebUpdater:
         research_summary = self.generate_research_summary_html()
         recent_papers = self.generate_recent_papers_html()
         
-        # Create minimal card-only content for the Deep Learning modal
+        # Create comprehensive Deep Learning content with detailed explanations
         new_modal_content = f"""
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Quick Stats Card -->
-            <div class="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
-                <div class="text-center">
-                    <div class="text-3xl font-bold mb-1">{latest_cycle.get('papers_analyzed', 0)}</div>
-                    <div class="text-sm opacity-90 mb-2">Papers This Week</div>
-                    <div class="text-xs opacity-75">Latest Research</div>
+        <div class="max-h-96 overflow-y-auto">
+            <h3 class="text-2xl font-bold text-center text-gray-900 mb-6">🧠 Deep Learning in Neuroscience</h3>
+            
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-3 gap-4 mb-6">
+                <div class="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-4 rounded-xl text-center">
+                    <div class="text-2xl font-bold">{latest_cycle.get('papers_analyzed', 0)}</div>
+                    <div class="text-xs opacity-90">Papers This Week</div>
+                </div>
+                <div class="bg-gradient-to-br from-green-500 to-emerald-600 text-white p-4 rounded-xl text-center">
+                    <div class="text-2xl font-bold">{len(self.data.get('categories', {}))}</div>
+                    <div class="text-xs opacity-90">Research Areas</div>
+                </div>
+                <div class="bg-gradient-to-br from-orange-500 to-red-600 text-white p-4 rounded-xl text-center">
+                    <div class="text-2xl font-bold">4</div>
+                    <div class="text-xs opacity-90">AI Models</div>
                 </div>
             </div>
             
-            <!-- AI Models Card -->
-            <div class="bg-gradient-to-br from-green-500 to-emerald-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
-                <div class="text-center">
-                    <div class="text-2xl mb-2">🤖</div>
-                    <div class="font-semibold mb-1">AI Models</div>
-                    <div class="text-xs opacity-90">GNN • CNN • Transformers</div>
-                </div>
-            </div>
-            
-            <!-- Research Areas Card -->
-            <div class="bg-gradient-to-br from-orange-500 to-red-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
-                <div class="text-center">
-                    <div class="text-2xl mb-2">🧠</div>
-                    <div class="font-semibold mb-1">Research Areas</div>
-                    <div class="text-xs opacity-90">Neural • Imaging • Surgery</div>
-                </div>
-            </div>
-            
-            <!-- Explore Papers Card -->
-            <div class="sm:col-span-2 lg:col-span-3">
-                <a href="research.html" class="block bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="text-center">
-                        <div class="text-2xl mb-2">📄</div>
-                        <div class="text-lg font-semibold mb-1">Explore All Research Papers</div>
-                        <div class="text-sm opacity-90">View detailed papers with Feynman explanations</div>
+            <!-- Deep Learning Models Section -->
+            <div class="space-y-6">
+                
+                <!-- Graph Neural Networks -->
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-3">🌐</span>
+                            <h4 class="text-lg font-bold text-blue-900">Graph Neural Networks (GNNs)</h4>
+                        </div>
+                        <button onclick="showFeynmanExplanation('gnn')" class="bg-gradient-to-r from-pink-400 to-red-400 text-white px-3 py-1 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+                            🧠 Explain as Feynman
+                        </button>
                     </div>
+                    <p class="text-sm text-blue-800 mb-3">Revolutionary AI for understanding brain connectivity networks and neural pathways.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                        <div class="bg-white p-3 rounded-lg">
+                            <strong class="text-blue-900">Applications:</strong><br>
+                            • Brain connectivity mapping<br>
+                            • Neural pathway analysis<br>
+                            • Disease progression modeling
+                        </div>
+                        <div class="bg-white p-3 rounded-lg">
+                            <strong class="text-blue-900">Key Benefits:</strong><br>
+                            • Captures complex relationships<br>
+                            • Handles irregular brain structures<br>
+                            • Predicts neurological conditions
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Transformers -->
+                <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-3">🎯</span>
+                            <h4 class="text-lg font-bold text-purple-900">Transformers</h4>
+                        </div>
+                        <button onclick="showFeynmanExplanation('transformers')" class="bg-gradient-to-r from-pink-400 to-red-400 text-white px-3 py-1 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+                            🧠 Explain as Feynman
+                        </button>
+                    </div>
+                    <p class="text-sm text-purple-800 mb-3">Attention-based models that focus on the most important parts of neural signals.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                        <div class="bg-white p-3 rounded-lg">
+                            <strong class="text-purple-900">Applications:</strong><br>
+                            • EEG signal analysis<br>
+                            • Neural spike prediction<br>
+                            • Brain-computer interfaces
+                        </div>
+                        <div class="bg-white p-3 rounded-lg">
+                            <strong class="text-purple-900">Key Benefits:</strong><br>
+                            • Selective attention mechanism<br>
+                            • Long-range dependencies<br>
+                            • Real-time processing
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CNNs -->
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl border border-green-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-3">👁️</span>
+                            <h4 class="text-lg font-bold text-green-900">Convolutional Neural Networks (CNNs)</h4>
+                        </div>
+                        <button onclick="showFeynmanExplanation('cnns')" class="bg-gradient-to-r from-pink-400 to-red-400 text-white px-3 py-1 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+                            🧠 Explain as Feynman
+                        </button>
+                    </div>
+                    <p class="text-sm text-green-800 mb-3">Specialized networks for analyzing brain images and detecting patterns.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                        <div class="bg-white p-3 rounded-lg">
+                            <strong class="text-green-900">Applications:</strong><br>
+                            • MRI/fMRI analysis<br>
+                            • Tumor detection<br>
+                            • Brain segmentation
+                        </div>
+                        <div class="bg-white p-3 rounded-lg">
+                            <strong class="text-green-900">Key Benefits:</strong><br>
+                            • Pattern recognition<br>
+                            • Spatial feature extraction<br>
+                            • Medical imaging expertise
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Multimodal AI -->
+                <div class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-xl border border-orange-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-3">🔗</span>
+                            <h4 class="text-lg font-bold text-orange-900">Multimodal AI</h4>
+                        </div>
+                        <button onclick="showFeynmanExplanation('multimodal')" class="bg-gradient-to-r from-pink-400 to-red-400 text-white px-3 py-1 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+                            🧠 Explain as Feynman
+                        </button>
+                    </div>
+                    <p class="text-sm text-orange-800 mb-3">Integrated AI systems that combine multiple types of brain data.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                        <div class="bg-white p-3 rounded-lg">
+                            <strong class="text-orange-900">Applications:</strong><br>
+                            • Combining MRI + EEG data<br>
+                            • Comprehensive diagnosis<br>
+                            • Holistic brain understanding
+                        </div>
+                        <div class="bg-white p-3 rounded-lg">
+                            <strong class="text-orange-900">Key Benefits:</strong><br>
+                            • Complete picture analysis<br>
+                            • Better accuracy<br>
+                            • Cross-validation of findings
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Action Button -->
+            <div class="text-center mt-6">
+                <a href="research.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    📄 Explore Detailed Research Papers
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
                 </a>
             </div>
         </div>"""
