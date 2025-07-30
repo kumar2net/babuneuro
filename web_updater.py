@@ -161,50 +161,85 @@ class WebUpdater:
         """Update the Deep Learning in Neuroscience section with latest research."""
         html_content = self.load_html()
         
+        # Get latest cycle data
+        latest_cycle = self.data['research_cycles'][-1] if self.data.get('research_cycles') else {}
+        total_papers = self.data['metrics'].get('total_papers_reviewed', 0)
+        
         # Generate new content
         research_summary = self.generate_research_summary_html()
         recent_papers = self.generate_recent_papers_html()
         
-        # Create updated content for the Deep Learning modal
-        new_modal_content = f"""<h3 class='text-2xl font-semibold text-gray-900 mb-4'>AI-Powered Brain Research</h3>
-        <p class='text-gray-700 leading-relaxed mb-6'>Deep Learning is revolutionizing neuroscience by analyzing complex brain data, improving surgical precision, and enabling breakthrough discoveries in neural interfaces and brain connectivity analysis.</p>
+        # Create updated content for the Deep Learning modal with clean card design
+        new_modal_content = f"""<h3 class='text-2xl font-semibold text-gray-900 mb-4 text-center'>🧠 AI-Powered Brain Research</h3>
+        <p class='text-gray-700 leading-relaxed mb-6 text-center'>Deep Learning is revolutionizing neuroscience by analyzing complex brain data, improving surgical precision, and enabling breakthrough discoveries in neural interfaces and brain connectivity analysis.</p>
         
-        {research_summary}
-        
-        {recent_papers}
-        
-        <div class="mt-6">
-            <h4 class="text-lg font-semibold text-gray-900 mb-4 text-center">🔑 Key Technologies</h4>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-3 rounded-lg border border-blue-100">
-                    <div class="flex items-center mb-2">
-                        <span class="text-lg mr-2">🌐</span>
-                        <h5 class="font-semibold text-blue-900 text-sm">Graph Neural Networks</h5>
-                    </div>
-                    <p class="text-xs text-blue-800">Advanced AI for mapping brain connectivity and neural pathways</p>
-                </div>
-                <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-3 rounded-lg border border-purple-100">
-                    <div class="flex items-center mb-2">
-                        <span class="text-lg mr-2">🎯</span>
-                        <h5 class="font-semibold text-purple-900 text-sm">Transformers</h5>
-                    </div>
-                    <p class="text-xs text-purple-800">Attention-based models for neural signal processing</p>
-                </div>
-                <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-3 rounded-lg border border-green-100">
-                    <div class="flex items-center mb-2">
-                        <span class="text-lg mr-2">👁️</span>
-                        <h5 class="font-semibold text-green-900 text-sm">CNNs</h5>
-                    </div>
-                    <p class="text-xs text-green-800">Convolutional networks for neuroimaging analysis</p>
-                </div>
-                <div class="bg-gradient-to-r from-orange-50 to-red-50 p-3 rounded-lg border border-orange-100">
-                    <div class="flex items-center mb-2">
-                        <span class="text-lg mr-2">🔗</span>
-                        <h5 class="font-semibold text-orange-900 text-sm">Multimodal AI</h5>
-                    </div>
-                    <p class="text-xs text-orange-800">Integrated AI for comprehensive brain understanding</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            <!-- Research Stats Card -->
+            <div class="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-4 rounded-xl shadow-lg">
+                <div class="text-center">
+                    <div class="text-2xl font-bold">{latest_cycle.get('papers_analyzed', 0)}</div>
+                    <div class="text-sm opacity-90">Papers This Week</div>
                 </div>
             </div>
+            
+            <!-- Total Papers Card -->
+            <div class="bg-gradient-to-br from-green-500 to-emerald-600 text-white p-4 rounded-xl shadow-lg">
+                <div class="text-center">
+                    <div class="text-2xl font-bold">{total_papers}</div>
+                    <div class="text-sm opacity-90">Total Papers</div>
+                </div>
+            </div>
+            
+            <!-- Research Areas Card -->
+            <div class="bg-gradient-to-br from-orange-500 to-red-600 text-white p-4 rounded-xl shadow-lg">
+                <div class="text-center">
+                    <div class="text-2xl font-bold">{len(self.data.get('categories', {}))}</div>
+                    <div class="text-sm opacity-90">Research Areas</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-6">
+            <h4 class="text-lg font-semibold text-gray-900 mb-4 text-center">🔑 Key Technologies</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-xl border border-blue-100 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-2">
+                        <span class="text-xl mr-3">🌐</span>
+                        <h5 class="font-semibold text-blue-900">Graph Neural Networks</h5>
+                    </div>
+                    <p class="text-sm text-blue-800">Advanced AI for mapping brain connectivity and neural pathways</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-xl border border-purple-100 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-2">
+                        <span class="text-xl mr-3">🎯</span>
+                        <h5 class="font-semibold text-purple-900">Transformers</h5>
+                    </div>
+                    <p class="text-sm text-purple-800">Attention-based models for neural signal processing</p>
+                </div>
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-xl border border-green-100 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-2">
+                        <span class="text-xl mr-3">👁️</span>
+                        <h5 class="font-semibold text-green-900">CNNs</h5>
+                    </div>
+                    <p class="text-sm text-green-800">Convolutional networks for neuroimaging analysis</p>
+                </div>
+                <div class="bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-xl border border-orange-100 hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-2">
+                        <span class="text-xl mr-3">🔗</span>
+                        <h5 class="font-semibold text-orange-900">Multimodal AI</h5>
+                    </div>
+                    <p class="text-sm text-orange-800">Integrated AI for comprehensive brain understanding</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <a href="research.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                📄 Explore All Research Papers
+                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
         </div>"""
         
         # Find and update the Deep Learning section
