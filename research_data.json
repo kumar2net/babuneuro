@@ -1,0 +1,1260 @@
+{
+  "last_updated": "2025-07-30T07:07:43.700174",
+  "research_cycles": [
+    {
+      "cycle_id": "2025-week-31",
+      "date_range": "July 28 - Aug 3, 2025",
+      "papers_analyzed": 0,
+      "findings": [],
+      "summary": "Initial setup - No research data collected yet",
+      "status": "pending"
+    },
+    {
+      "cycle_id": "2025-week-31",
+      "date_range": "July 30 - August 05, 2025",
+      "papers_analyzed": 45,
+      "findings": [
+        {
+          "title": "Deep brain stimulation of nucleus basalis of meynert: Effect of stimulation mode and duration on learning in rat model of dementia.",
+          "abstract": "Deep brain stimulation (DBS) of the nucleus basalis of Meynert (NBM) has been preliminarily investigated as a potential treatment for dementia. The degeneration of NBM cholinergic neurons is a pathological feature of many forms of dementia. Although NBM stimulation has been demonstrated to improve learning, the ideal parameters for NBM stimulation have not been elucidated. This study assesses the differential effects of varying stimulation patterns and duration on learning in a dementia rat model with cholinergic deficits. 192-IgG saporin (SAP) or Dulbecco's phosphate buffered saline was injected into the NBM to produce dementia in rats. Next, all rats underwent unilateral implantation of a DBS electrode in the NBM. The experimental groups consisted of (a) normal, (b) untreated SAP-injected rats with cholinergic deficits, and (c) SAP rats receiving NBM DBS. The stimulation paradigms included testing different modes (tonic and burst) and durations (1 hr, 5 hr, and 24 hr/day) over 10 daily sessions. Memory was assessed using two established learning paradigms: novel object recognition and auditory operant chamber learning. Both normal and stimulated rats demonstrated improved performance in novel object recognition and auditory learning as compared to the unstimulated SAP group. The burst stimulation groups performed better than the tonic group. Increasing the daily stimulation duration to 24 hr did not further improve cognitive performance in an auditory recognition task and degraded the results on a novel object recognition task as compared with 5 hr. The present findings suggest that naturalistic NBM burst DBS may offer potential effective therapy for treating dementia and suggests potential strategies for the reevaluation of current human NBM stimulation paradigms. (PsycInfo Database Record (c) 2025 APA, all rights reserved).",
+          "authors": [
+            "Deepak Kumbhare",
+            "Megan Rajagopal",
+            "Jamie Toms",
+            "Anne Freelin",
+            "George Weistroffer",
+            "Nicholas McComb",
+            "Sindhu Karnam",
+            "Adel Azghadi",
+            "Kevin S Murnane",
+            "Mark S Baron",
+            "Kathryn L Holloway"
+          ],
+          "journal": "Behavioral neuroscience",
+          "year": "2025",
+          "pmid": "40489147",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40489147/",
+          "categories": [
+            "neuroimaging",
+            "neuromodulation"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.695273"
+        },
+        {
+          "title": "A Competency-Based Approach to Functional Neurosurgery Training: Insights From the Surgical Autonomy Program.",
+          "abstract": "The Accreditation Council for Graduate Medical Education (ACGME) relies on case minimums as a standard competency indicator, set by expert opinion rather than individual resident performance. We used the Surgical Autonomy Program, a validated method of competency-based resident evaluation, to track autonomy progression across residency and compare the reported number of cases it took residents to reach autonomy with the case minimums set by the ACGME.",
+          "authors": [
+            "Katrina Hon",
+            "Pranav Warman",
+            "Vishal Venkatraman",
+            "Alexander D Suarez",
+            "Margot Kelly-Hendrick",
+            "Samuel Teshome",
+            "Rajeev Dharmapurikar",
+            "Michael M Haglund",
+            "Shivanand P Lad"
+          ],
+          "journal": "Neuromodulation : journal of the International Neuromodulation Society",
+          "year": "2025",
+          "pmid": "40682579",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40682579/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.695413"
+        },
+        {
+          "title": "Automated Finite Element Modeling of the Lumbar Spine: A Biomechanical and Clinical Approach to Spinal Load Distribution and Stress Analysis.",
+          "abstract": "Biomechanical analysis of the lumbar spine is vital for understanding load distribution and stress patterns under physiological conditions. Traditional finite element analysis (FEA) relies on time-consuming manual segmentation and meshing, leading to long runtimes and inconsistent accuracy. Automating this process improves efficiency and reproducibility.",
+          "authors": [
+            "Mohsen Ahmadi",
+            "Xuanzong Zhang",
+            "Maohua Lin",
+            "Yufei Tang",
+            "Erik D Engeberg",
+            "Javad Hashemi",
+            "Frank D Vrionis"
+          ],
+          "journal": "World neurosurgery",
+          "year": "2025",
+          "pmid": "40602487",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40602487/",
+          "categories": [
+            "other"
+          ],
+          "models_mentioned": [
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.695515"
+        },
+        {
+          "title": "Robotic spine surgery: Technical note and descriptive analysis of the first 40 cases.",
+          "abstract": "The global incidence of spinal pathology is increasing due to the progressive aging of the population and increased life expectancy. Vertebral fixation with transpedicular screws is the most commonly used technique in unstable or potentially unstable pathologies. There are different implantation methods, the most recently developed being implantation guided by robotic navigation.",
+          "authors": [
+            "V\u00edctor Rodr\u00edguez-Dom\u00ednguez",
+            "Jorge Bedia Cadelo",
+            "Javier Giner Garc\u00eda",
+            "Mar\u00eda Luisa Gand\u00eda Gonz\u00e1lez",
+            "Catalina Vivancos S\u00e1nchez",
+            "Alberto Isla Guerrero"
+          ],
+          "journal": "Neurocirugia",
+          "year": "2025",
+          "pmid": "39674279",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39674279/",
+          "categories": [
+            "surgical_ai",
+            "neuroimaging"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.695602"
+        },
+        {
+          "title": "An active electronic, high-density epidural paddle array for chronic spinal cord neuromodulation.",
+          "abstract": null,
+          "authors": [
+            "Samuel R Parker",
+            "Jonathan S Calvert",
+            "Radu Darie",
+            "Jaeson Jang",
+            "Lakshmi Narasimhan Govindarajan",
+            "Keith Angelino",
+            "Girish Chitnis",
+            "Yohannes Iyassu",
+            "Elias Shaaya",
+            "Jared S Fridley",
+            "Thomas Serre",
+            "David A Borton",
+            "Bryan L McLaughlin"
+          ],
+          "journal": "Journal of neural engineering",
+          "year": "2025",
+          "pmid": "40104941",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40104941/",
+          "categories": [
+            "neuroimaging",
+            "neuromodulation"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.695654"
+        },
+        {
+          "title": "Mifnet: a MamBa-based interactive frequency convolutional neural network for motor imagery decoding.",
+          "abstract": "Motor imagery (MI) decoding remains a critical challenge in brain-computer interface (BCI) systems due to the low signal-to-noise ratio, non-stationarity, and complex spatiotemporal dynamics of electroencephalography (EEG) signals. Although deep learning architectures have advanced MI-EEG decoding, existing approaches-including convolutional neural networks (CNNs), Transformers, and recurrent neural networks (RNNs)-still face limitations in capturing global temporal dependencies, maintaining positional coherence, and ensuring computational efficiency. To address these challenges, we propose MIFNet, a MamBa-based Interactive Frequency Convolutional Neural Network that systematically integrates spectral, spatial, and temporal feature extraction. Specifically, MIFNet incorporates: non-overlapping frequency decomposition, which selectively extracts motor imagery-related mu (8-12 Hz) and beta (12-32 Hz) rhythms; a ConvEncoder module, which autonomously learns to fuse spectral-spatial features from both frequency bands; and a MamBa-based temporal module, leveraging selective state-space models (SSMs) to efficiently capture long-range dependencies with linear complexity. Extensive experiments on three public MI-EEG datasets (BCIC-IV-2A, OpenBMI, and High Gamma) demonstrate that MIFNet outperforms existing models, achieving an average classification accuracy improvement of 12.3%, 8.3%, 4.7%, and 5.5% over EEGNet, FBCNet, IFNet, and Conformer, respectively. Ablation studies further validate the necessity of each component, with the MamBa module contributing a 5.5% improvement in accuracy on the BCIC-IV-2A dataset. Moreover, MIFNet exhibits strong generalization performance in cross-validation settings, establishing a robust foundation for real-time BCI applications. Our findings highlight the potential of hybridizing CNNs with state-space models (SSMs) for improving EEG decoding performance, effectively bridging the gap between localized feature extraction and global temporal modeling.",
+          "authors": [
+            "Luoqian Yang",
+            "Weina Zhu"
+          ],
+          "journal": "Cognitive neurodynamics",
+          "year": "2025",
+          "pmid": "40605914",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40605914/",
+          "categories": [
+            "neural_implants",
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "transformer",
+            "cnn",
+            "rnn"
+          ],
+          "processed_date": "2025-07-30T07:07:43.695833"
+        },
+        {
+          "title": "Brain analysis to approach human muscles synergy using deep learning.",
+          "abstract": "Brain signals and muscle movements have been analyzed using electroencephalogram (EEG) data in several studies. EEG signals contain a lot of noise, such as electromyographic (EMG) waves. Further studies have been done to improve the quality of the results, though it is thought that the combination of these two signals can lead to a significant improvement in the synergistic analysis of muscle movements and muscle connections. Using graph theory, this study examined the interaction of EMG and EEG signals during hand movement and estimated the synergy between muscle and brain signals. Mapping of the brain diagram was also developed to reconstruct the muscle signals from the muscle connections in the brain diagram. The proposed method included noise removal from EEG and EMG signals, graph feature analysis from EEG, and synergy calculation from EMG. Two methods were used to estimate synergy. In the first method, after calculating the brain connections, the features of the communication graph were extracted and then synergy estimating was made with neural networks. In the second method, a convolutional network created a transition from the matrix of brain connections to the synergistic EMG signal. This study reached the high correlation values of 99.8% and maximum MSE error of 0.0084. Compared to other graph-based methods, this method based on regression analysis had a very significant performance. This research can lead to the improvement of rehabilitation methods and brain-computer interfaces.",
+          "authors": [
+            "Elham Samadi",
+            "Fereidoun Nowshiravan Rahatabad",
+            "Ali Motie Nasrabadi",
+            "Nader Jafarnia Dabanlou"
+          ],
+          "journal": "Cognitive neurodynamics",
+          "year": "2025",
+          "pmid": "39996071",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39996071/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "cnn"
+          ],
+          "processed_date": "2025-07-30T07:07:43.696023"
+        },
+        {
+          "title": "Longitudinal EEG-based assessment of neuroplasticity and adaptive responses to transcranial focused ultrasound stimulation.",
+          "abstract": "An emerging non-invasive neuromodulation technique named Transcranial-focused ultrasound stimulation (tFUS) offered several advantages than the conventional methods in terms of high spatial precision and penetration depth. In neurological disorders, this emerging method have gained a lot of attention, because of has the potential for therapeutic modulation of brain activity. Then, lack of standardized, Real-Time (RT) assessment protocols will result in unclear comprehension regarding the way the repeated tFUS applications may impacts the neuroplasticity and adaptive brain responses in a long-term. Here, the short-term and long-term neuroplastic modifications were effectively identified by the the longitudinal integration of EEG biomarkers with tFUS stimulation sessions. An adaptive modulation strategies customized for individual neural responses are also facilitated by this hypothesis.",
+          "authors": [
+            "Jamal Alsamri",
+            "Mohammad Alamgeer",
+            "Malak Zayed Alamri",
+            "Mukhtar Ghaleb",
+            "Somia A Asklany",
+            "Hamad Almansour",
+            "Safa Alsafari",
+            "Elham Abdullah Alghamdi"
+          ],
+          "journal": "Journal of neuroscience methods",
+          "year": "2025",
+          "pmid": "40581220",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40581220/",
+          "categories": [
+            "neuroimaging",
+            "neuromodulation",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.696163"
+        },
+        {
+          "title": "Emotion recognition in EEG Signals: Deep and machine learning approaches, challenges, and future directions.",
+          "abstract": "A crucial part of brain-computer interfaces is the use of electroencephalogram (EEG) signals for human emotion identification, which analyzes patterns of brain activity to determine the emotional state. This field of study is becoming increasingly important for developing advanced applications that enhance brain machine interaction and improve brain health assessment systems. However, EEG signal analysis faces significant challenges due to their subject-specific nature, high noise levels, and the scarcity of high-quality labeled data, which collectively limit model generalizability and complicate signal analysis. Traditional approaches have employed handcrafted features with Support Vector Machines (SVM), K-Nearest Neighbors (KNN), and Random Forests (RF) for EEG feature extraction and classification. Recent advances in deep learning, particularly Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN), enable automatic feature learning from raw data to extract temporal, spatial, and spectral properties. The study employs a literature review approach and the analysis of the popular datasets (e.g., DEAP, SEED, AMIGOS). Despite technological advances, the fundamental challenges of noisy subject variability, and limited labeled data persist, requiring future research to focus on improving model robustness, scalability, and interpretability while addressing current limitations.",
+          "authors": [
+            "Samara S Al-Hadithy",
+            "Ahmed Subhi Abdalkafor",
+            "Belal Al-Khateeb"
+          ],
+          "journal": "Computers in biology and medicine",
+          "year": "2025",
+          "pmid": "40644885",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40644885/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "cnn",
+            "rnn",
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.696353"
+        },
+        {
+          "title": "Understanding of Task-Specific and Subject-Specific Components in Surface EMG.",
+          "abstract": "Surface electromyogram (sEMG) signals are widely used in human-machine interfaces for gesture recognition and user identification, but existing models often struggle with generalization across different individuals due to subject-specific neuromuscular characteristics. This study introduced a disentanglement model to separate task-specific and subject-specific components from sEMG signals, thus improving the generalization and interpretability of gesture recognition and user identification systems. Experimental results demonstrate that disentangled task-specific components significantly improve the accuracy of both gesture classification and user identification across different subjects and days, outperforming conventional methods in the same scenario. Further analysis of the extracted components reveals that task-specific components capture consistent activation patterns for the same gestures across individuals. In contrast, subject-specific components reflect unique neuromuscular characteristics that can be used for user identification. Notably, subject-specific components show reduced similarity compared to task-specific components in inter-day scenarios, contributing to more accuracy decrease in user identification than in gesture recognition. These findings suggest that the disentanglement approach not only boosts classification performance but also provides deeper insights into the physiological mechanisms underlying sEMG signals. The model's ability to isolate and interpret different neuromuscular components holds promise for enhancing the robustness of sEMG-based applications in real-world settings, such as rehabilitation and user authentication.",
+          "authors": [
+            "Yangyang Yuan",
+            "Jionghui Liu",
+            "Xinyu Jiang",
+            "Jiahao Fan",
+            "Chih-Hong Chou",
+            "Chenyun Dai"
+          ],
+          "journal": "International journal of neural systems",
+          "year": "2025",
+          "pmid": "40624756",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40624756/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.696567"
+        },
+        {
+          "title": "Nonsuicidal self-injury prediction with pain-processing neural circuits using interpretable graph neural network.",
+          "abstract": "Nonsuicidal self-injury (NSSI) involves the intentional destruction of one's own body tissues without suicidal intent. Prior research has shown that individuals with NSSI exhibit abnormal pain perception; however, the pain-processing neural circuits underlying NSSI remain poorly understood. This study leverages graph neural networks to predict NSSI risk and examine the learned connectivity of neural underpinnings using multimodal data.",
+          "authors": [
+            "Sichu Wu",
+            "Yuan Xue",
+            "Yaming Hang",
+            "Ya Xie",
+            "Pei Zhang",
+            "Minlu Liang",
+            "Yuan Zhong",
+            "Chun Wang"
+          ],
+          "journal": "Annals of medicine",
+          "year": "2025",
+          "pmid": "40528360",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40528360/",
+          "categories": [
+            "neuroimaging",
+            "diagnosis_prediction",
+            "brain_connectivity"
+          ],
+          "models_mentioned": [
+            "gnn",
+            "vit",
+            "multimodal"
+          ],
+          "processed_date": "2025-07-30T07:07:43.696651"
+        },
+        {
+          "title": "Functional connectome-based predictive modeling of suicidal ideation.",
+          "abstract": "Suicide represents an egregious threat to society despite major advancements in medicine, in part due to limited knowledge of the biological mechanisms of suicidal behavior. We apply a connectome predictive modeling machine learning approach to identify a reproducible brain network associated with suicidal ideation in the hopes of demonstrating possible targets for novel anti-suicidal therapeutics. Patients were recruited from an inpatient facility at The Menninger Clinic, in Houston, Texas (N\u00a0=\u00a0261; 181 with active and specific suicidal ideation) and had a current major depressive episode and recurrent major depressive disorder, underwent resting-state functional magnetic resonance imaging. The participants' ages ranged from 18 to 70 (mean\u00a0\u00b1\u00a0SEM\u00a0=\u00a031.6\u00a0\u00b1\u00a00.8\u00a0years) and 136 (52\u00a0%) were males. Using this approach, we found a robust and reproducible biomarker of suicidal ideation relative to controls without ideation, showing that increased suicidal ideation was associated with greater internal connectivity and reduced internetwork external connectivity in the central executive, default mode, and dorsal salience networks. We also found evidence for higher external connectivity between ventral salience and sensorimotor/visual networks as being associated with increased suicidal ideation. Overall, these observed differences may reflect reduced network integration and higher segregation of connectivity in individuals with increased suicide risk. Our findings provide avenues for future work to test novel drugs targeting these identified neural alterations, for instance drugs that increase network integration.",
+          "authors": [
+            "Lynnette A Averill",
+            "Amanda J F Tamman",
+            "Samar Fouda",
+            "Christopher L Averill",
+            "Samaneh Nemati",
+            "Anya Ragnhildstveit",
+            "Savannah Gosnell",
+            "Teddy J Akiki",
+            "Ramiro Salas",
+            "Chadi G Abdallah"
+          ],
+          "journal": "Journal of affective disorders",
+          "year": "2025",
+          "pmid": "40441623",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40441623/",
+          "categories": [
+            "neuroimaging",
+            "brain_connectivity"
+          ],
+          "models_mentioned": [
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.696903"
+        },
+        {
+          "title": "Predicting Mental and Neurological Illnesses Based on Cerebellar Normative Features.",
+          "abstract": "Mental and neurological conditions have been linked to structural brain variations. However, aside from dementia, the value of brain structural characteristics derived from brain scans for prediction is relatively low. One reason for this limitation is the clinical and biological heterogeneity inherent to such conditions. Recent studies have implicated aberrations in the cerebellum, a relatively understudied brain region, in these clinical conditions.",
+          "authors": [
+            "Milin Kim",
+            "Nitin Sharma",
+            "Esten H Leonardsen",
+            "Saige Rutherford",
+            "Geir Selb\u00e6k",
+            "Karin Persson",
+            "Nils Eiel Steen",
+            "Olav B Smeland",
+            "Torill Ueland",
+            "Genevi\u00e8ve Richard",
+            "Aikaterina Manoli",
+            "Sofie L Valk",
+            "Dag Aln\u00e6s",
+            "Christian F Beckman",
+            "Andre F Marquand",
+            "Ole A Andreassen",
+            "Lars T Westlye",
+            "Thomas Wolfers",
+            "Torgeir Moberget"
+          ],
+          "journal": "Biological psychiatry global open science",
+          "year": "2025",
+          "pmid": "40678689",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40678689/",
+          "categories": [
+            "neuroimaging",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.696983"
+        },
+        {
+          "title": "Transformer attention-based neural network for cognitive score estimation from sMRI data.",
+          "abstract": "Accurately predicting cognitive scores based on structural MRI holds significant clinical value for understanding the pathological stages of dementia and forecasting Alzheimer's disease (AD). Some existing deep learning methods often depend on anatomical priors, overlooking individual-specific structural differences during AD progression. To address these limitations, this work proposes a deep neural network that incorporates Transformer attention to jointly predict multiple cognitive scores, including ADAS, CDRSB, and MMSE. The architecture first employs a 3D convolutional neural network backbone to encode sMRI, capturing preliminary local structural information. Then an improved Transformer attention block integrated with 3D positional encoding and 3D convolutional layer to adaptively capture discriminative imaging features across the brain, thereby focusing on key cognitive-related regions effectively. Finally, an attention-aware regression network enables the joint prediction of multiple clinical scores. Experimental results demonstrate that our method outperforms some existing traditional and deep learning methods based on the ADNI dataset. Further qualitative analysis reveals that the dementia-related brain regions identified by the model hold important biological significance, effectively enhancing the performance of cognitive score prediction. Our code is publicly available at: https://github.com/lshsx/CTA_MRI.",
+          "authors": [
+            "Songheng Li",
+            "Yanteng Zhang",
+            "Congyu Zou",
+            "Lipei Zhang",
+            "Fei Li",
+            "Qiang Liu"
+          ],
+          "journal": "Computers in biology and medicine",
+          "year": "2025",
+          "pmid": "40614523",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40614523/",
+          "categories": [
+            "neuroimaging",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [
+            "transformer",
+            "cnn"
+          ],
+          "processed_date": "2025-07-30T07:07:43.697082"
+        },
+        {
+          "title": "Symbolic and hybrid AI for brain tissue segmentation using spatial model checking.",
+          "abstract": "Segmentation of 3D medical images, and brain segmentation in particular, is an important topic in neuroimaging and in radiotherapy. Overcoming the current, time consuming, practise of manual delineation of brain tumours and providing an accurate, explainable, and replicable method of segmentation of the tumour area and related tissues is therefore an open research challenge. In this paper, we first propose a novel symbolic approach to brain segmentation and delineation of brain lesions based on spatial model checking. This method has its foundations in the theory of closure spaces, a generalisation of topological spaces, and spatial logics. At its core is a high-level declarative logic language for image analysis, ImgQL, and an efficient spatial model checker, VoxLogicA, exploiting state-of-the-art image analysis libraries in its model checking algorithm. We then illustrate how this technique can be combined with Machine Learning techniques leading to a hybrid AI approach that provides accurate and explainable segmentation results. We show the results of the application of the symbolic approach on several public datasets with 3D magnetic resonance (MR) images. Three datasets are provided by the 2017, 2019 and 2020 international MICCAI BraTS Challenges with 210, 259 and 293 MR images, respectively, and the fourth is the BrainWeb dataset with 20 (synthetic) 3D patient images of the normal brain. We then apply the hybrid AI method to the BraTS 2020 training set. Our segmentation results are shown to be in line with the state-of-the-art with respect to other recent approaches, both from the accuracy point of view as well as from the view of computational efficiency, but with the advantage of them being explainable.",
+          "authors": [
+            "Gina Belmonte",
+            "Vincenzo Ciancia",
+            "Mieke Massink"
+          ],
+          "journal": "Artificial intelligence in medicine",
+          "year": "2025",
+          "pmid": "40446591",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40446591/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.697206"
+        },
+        {
+          "title": "\u03b3 neuromodulations: unraveling biomarkers for neurological and psychiatric disorders.",
+          "abstract": "\u03b3 neuromodulation has emerged as a promising strategy for addressing neurological and psychiatric disorders, particularly in regulating executive and cognitive functions. This review explores the latest neuromodulation techniques, focusing on the critical role of \u03b3 oscillations in various brain disorders. Direct \u03b3 neuromodulation induces \u03b3-frequency oscillations to synchronize disrupted brain networks, while indirect methods influence \u03b3 oscillations by modulating cortical excitability. We investigate how monitoring dynamic features of \u03b3 oscillations allows for detailed evaluations of neuromodulation effectiveness. By targeting \u03b3 oscillatory patterns and restoring healthy cross-frequency coupling, interventions may alleviate cognitive and behavioral symptoms linked to disrupted communication. This review examines clinical applications of \u03b3 neuromodulations, including enhancing cognitive function through 40 Hz multisensory stimulation in Alzheimer's disease, improving motor function in Parkinson's disease, controlling seizures in epilepsy, and modulating emotional dysfunctions in depression. Additionally, these neuromodulation strategies aim to regulate excitatory-inhibitory imbalances and restore \u03b3 synchrony across neurological and psychiatric disorders. The review highlights the potential of \u03b3 oscillations as biomarkers to boost restorative results in clinical applications of neuromodulation. Future studies might focus on integrating multimodal personalized protocols, artificial intelligence (AI) driven frameworks for neural decoding, and global multicenter collaborations to standardize and scale precision treatments across diverse disorders.",
+          "authors": [
+            "Zhong-Peng Dai",
+            "Qiang Wen",
+            "Ping Wu",
+            "Yan-Ni Zhang",
+            "Cai-Lian Fang",
+            "Meng-Yuan Dai",
+            "Hong-Liang Zhou",
+            "Huan Wang",
+            "Hao Tang",
+            "Si-Qi Zhang",
+            "Xiao-Kun Li",
+            "Jian-Song Ji",
+            "Liu-Xi Chu",
+            "Zhou-Guang Wang"
+          ],
+          "journal": "Military Medical Research",
+          "year": "2025",
+          "pmid": "40571935",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40571935/",
+          "categories": [
+            "neuroimaging",
+            "neuromodulation",
+            "diagnosis_prediction",
+            "brain_connectivity"
+          ],
+          "models_mentioned": [
+            "multimodal"
+          ],
+          "processed_date": "2025-07-30T07:07:43.697353"
+        },
+        {
+          "title": "Shaping the Future of Psychiatric Neurosurgery: From Connectomic Precision to Technological Integration.",
+          "abstract": "Psychiatric neurosurgery is undergoing a profound transformation, propelled by advances in neurotechnology, connectomics, and personalized medicine. Once controversial, surgical interventions are now guided by detailed functional brain mapping and precise neuromodulation techniques, such as deep brain stimulation (DBS), which offer therapeutic options for patients with severe, treatment-resistant psychiatric disorders. This manuscript reviews the current techniques, including lesion-based procedures and DBS, and explores their mechanisms of action, from synaptic plasticity to large-scale network modulation. It highlights recent progress in neuroimaging, connectomic targeting, and artificial intelligence applications for surgical planning and the prediction of treatment responses. Ethical considerations-including informed consent, identity, and long-term follow-up-are critically examined in light of these advances. Furthermore, the growing role of minimally invasive procedures and wearable integrated neurotechnologies is discussed as part of a shift toward dynamic and adaptive interventions. Although still investigational, psychiatric neurosurgery is emerging as a technologically sophisticated field that demands rigorous clinical evaluation, ethical accountability, and an individualized approach to restoring function and autonomy in some of the most disabling mental illnesses.",
+          "authors": [
+            "Cristina V Torres D\u00edaz",
+            "Marta Navas Garc\u00eda",
+            "Paloma Pulido Rivas",
+            "M\u00f3nica Lara Almunia",
+            "Jos\u00e9 Antonio Fern\u00e1ndez Al\u00e9n"
+          ],
+          "journal": "Brain sciences",
+          "year": "2025",
+          "pmid": "40563817",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40563817/",
+          "categories": [
+            "neuroimaging",
+            "neuromodulation",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.697445"
+        },
+        {
+          "title": "A comprehensive review of neurotransmitter modulation via artificial intelligence: A new frontier in personalized neurobiochemistry.",
+          "abstract": "The deployment of artificial intelligence (AI) is revolutionizing neuropharmacology and drug development, allowing the modulation of neurotransmitter systems at the personal level. This review focuses on the neuropharmacology and regulation of neurotransmitters using predictive modeling, closed-loop neuromodulation, and precision drug design. The fusion of AI with applications such as machine learning, deep-learning, and even computational modeling allows for the real-time tracking and enhancement of biological processes within the body. An exemplary application of AI is the use of DeepMind's AlphaFold to design new GABA reuptake inhibitors for epilepsy and anxiety. Likewise, Benevolent AI and IBM Watson have fast-tracked drug repositioning for neurodegenerative conditions. Furthermore, we identified new serotonin reuptake inhibitors for depression through AI screening. In addition, the application of Deep Brain Stimulation (DBS) settings using AI for patients with Parkinson's disease and for patients with major depressive disorder (MDD) using reinforcement learning-based transcranial magnetic stimulation (TMS) leads to better treatment. This review highlights other challenges including algorithm bias, ethical concerns, and limited clinical validation. Their proposal to incorporate AI with optogenetics, CRISPR, neuroprosthesis, and other advanced technologies fosters further exploration and refinement of precision neurotherapeutic approaches. By bridging computational neuroscience with clinical applications, AI has the potential to revolutionize neuropharmacology and improve patient-specific treatment strategies. We addressed critical challenges, such as algorithmic bias and ethical concerns, by proposing bias auditing, diverse datasets, explainable AI, and regulatory frameworks as practical solutions to ensure equitable and transparent AI applications in neurotransmitter modulation.",
+          "authors": [
+            "Jaleh Bagheri Hamzyan Olia",
+            "Arasu Raman",
+            "Chou-Yi Hsu",
+            "Ahmad Alkhayyat",
+            "Alireza Nourazarian"
+          ],
+          "journal": "Computers in biology and medicine",
+          "year": "2025",
+          "pmid": "40088712",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40088712/",
+          "categories": [
+            "neuroimaging",
+            "neuromodulation",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.697576"
+        },
+        {
+          "title": "Closing the loop in DBS: A data-driven approach.",
+          "abstract": "Deep brain stimulation (DBS) has transformed the treatment of movement disorders like Parkinson's Disease (PD). Innovations in DBS technology and experimentation have fostered adaptive DBS (aDBS), which employs a closed-loop system that senses physiological biomarkers to inform precise neuromodulation and personalized therapy. This review analyzes several promising advances in aDBS, including biomarker detection, control policies, mechanisms of efficacy, and a data-driven approach using artificial intelligence to decode motor states from neural signals. Investigations into data-driven approaches have expanded biomarker detection beyond subcortical beta oscillations, leveraging other neural and kinematic signals. Future aDBS systems that accommodate multi-modal inputs have the potential to bolster therapeutic efficacy and address symptoms not addressed by beta-driven aDBS. Continuing investigation is necessary to address existing technical and computational challenges for further clinical translation.",
+          "authors": [
+            "Prerana Acharyya",
+            "Kerry W Daley",
+            "Jin Woo Choi",
+            "Kevin B Wilkins",
+            "Shreesh Karjagi",
+            "Chuyi Cui",
+            "Gang Seo",
+            "Annie K Abay",
+            "Helen M Bronte-Stewart"
+          ],
+          "journal": "Parkinsonism & related disorders",
+          "year": "2025",
+          "pmid": "40037940",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40037940/",
+          "categories": [
+            "neuroimaging",
+            "neuromodulation",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [
+            "multimodal"
+          ],
+          "processed_date": "2025-07-30T07:07:43.697650"
+        },
+        {
+          "title": "Are we ready for automated deep brain stimulation programming?",
+          "abstract": "Deep brain stimulation (DBS) requires individualized programming of stimulation parameters, a time-consuming process performed manually by clinicians with specialized training. This process limits DBS accessibility, delays treatment, and constrains the potential for next-generation technology to improve patient outcomes. This review describes technological advancements that could automate DBS programming, focusing on Parkinson's disease biomarkers that can provide objective outcome measurement and algorithms that can quickly and automatically identify optimal DBS settings. We first define key performance criteria for an automated programming system, including effectiveness, efficiency, and ease of use, and then describe and evaluate each component with respect to these criteria. We conclude that the state of current research provides a strong foundation for developing automated DBS programming. The primary remaining obstacle lies in identifying and deploying the best combination of available techniques that will overcome the high entry barrier needed for wide-scale clinical deployment and adoption.",
+          "authors": [
+            "Eric R Cole",
+            "Svjetlana Miocinovic"
+          ],
+          "journal": "Parkinsonism & related disorders",
+          "year": "2025",
+          "pmid": "40016056",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40016056/",
+          "categories": [
+            "neuroimaging",
+            "neuromodulation",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.697734"
+        },
+        {
+          "title": "M4CEA: A Knowledge-guided Foundation Model for Childhood Epilepsy Analysis.",
+          "abstract": "Existing electroencephalogram (EEG)-based deep learning models are mainly designed for single or several specific tasks in childhood epilepsy analysis, which limits the perceptual capabilities and generalisability of the model. Recently, Foundation Models (FMs) achieved significant success in medical analysis, motivating us to explore the capability of FMs in childhood epilepsy analysis. The objective is to construct a FM with strong generalization capability on multi-tasking childhood epilepsy analysis. To this end, we propose a knowledge-guided foundation model for childhood epilepsy analysis (M4CEA) in this paper. The main contributions of the M4CEA are using the knowledge-guided mask strategy and the temporal embedding of the temporal encoder, which allow the model to effectively capture multi-domain representations of childhood EEG signals. Through pre-training on an EEG dataset with more than 1,000 hours childhood EEG recording, and performance fine-tuning, the developed M4CEA model can achieve promising performance on 8 downstream tasks in childhood epilepsy analysis, including artifact detection, onset detection, seizure type classification, childhood epilepsy syndrome classification, hypoxic-ischaemic encephalopathy (HIE) grading, sleep stage classification, epileptiform activity detection and spike-wave index (SWI) quantification. Taking HUH (Helsinki University Hospital) seizure detection task as an example, our model shows 9.42% improvement over LaBraM (a state-of-the-art Large Brain foundation Model for EEG analysis) in Balanced Accuracy. The source code and pre-trained weight are available at: https://github.com/Evigouse/M4CEA Project.",
+          "authors": [
+            "Yuanmeng Feng",
+            "Dinghan Hu",
+            "Tiejia Jiang",
+            "Feng Gao",
+            "Jiuwen Cao"
+          ],
+          "journal": "IEEE journal of biomedical and health informatics",
+          "year": "2025",
+          "pmid": "40674185",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40674185/",
+          "categories": [
+            "neuroimaging",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.697865"
+        },
+        {
+          "title": "Annotating neurophysiologic data at scale with optimized human input.",
+          "abstract": null,
+          "authors": [
+            "Zhongchuan Xu",
+            "Brittany H Scheid",
+            "Erin C Conrad",
+            "Kathryn A Davis",
+            "Taneeta Ganguly",
+            "Michael A Gelfand",
+            "James J Gugger",
+            "Xiangyu Jiang",
+            "Joshua J LaRocque",
+            "William K S Ojemann",
+            "Saurabh R Sinha",
+            "Genna J Waldman",
+            "Joost Wagenaar",
+            "Nishant Sinha",
+            "Brian Litt"
+          ],
+          "journal": "Journal of neural engineering",
+          "year": "2025",
+          "pmid": "40505672",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40505672/",
+          "categories": [
+            "other"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.697906"
+        },
+        {
+          "title": "Artificial Intelligence and Machine Learning in Neuromodulation for Epilepsy.",
+          "abstract": "Recent advances in artificial intelligence (AI) and machine learning (ML) can revolutionize neuromodulation therapies for drug-resistant epilepsy. Successful incorporation of AI/ML methods into the management of epilepsy can guide treatment decisions, enable interventions to adapt to dynamic epileptic networks, and hopefully improve patient outcomes. We introduce some common concepts in ML, focusing on neural networks, particularly convolutional and recurrent neural networks, and support vector machines, because these methods have been commonly applied to epilepsy neuromodulation. We discuss current AI/ML applications in neuromodulation, encompassing vagus nerve stimulation, responsive neurostimulation, and deep brain stimulation, for the treatment of epilepsy. We consider how AI/ML methods leverage large data sets to enhance patient-specific epileptic network analysis, optimize stimulation targets, and refine closed-loop systems for real-time seizure detection and termination. AI/ML applications extend to recognizing autonomic and behavioral seizure surrogates, detecting interictal epileptiform activity, and forecasting seizures for preemptive interventions. Furthermore, AI-powered neuroimaging analysis can enhance segmentation accuracy for precise electrode placement, which can improve neuromodulation outcomes. We review which AI/ML tools have been applied to each problem, as well as their relative performance. Challenges remain, however, in translating AI/ML models into clinical settings due to interpatient variability and limited real-world validation. Future directions include integrating behavioral signals, developing AI-assisted clinical decision tools, and refining energy-efficient neurostimulation designs. Large language models and generative AI hold promise for optimizing patient-specific neuromodulation strategies. However, further research is required to validate AI/ML applications in clinical practice, enhance model generalizability, and address ethical concerns surrounding data privacy and AI-driven decision making.",
+          "authors": [
+            "Brian Ervin",
+            "Ravindra Arya"
+          ],
+          "journal": "Journal of clinical neurophysiology : official publication of the American Electroencephalographic Society",
+          "year": "2025",
+          "pmid": "40601969",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40601969/",
+          "categories": [
+            "neuroimaging",
+            "neuromodulation",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [
+            "cnn",
+            "rnn",
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.698033"
+        },
+        {
+          "title": "Expert-Level Detection of Epilepsy Markers in EEG on Short and Long Timescales.",
+          "abstract": "Epileptiform discharges, or spikes, within electroencephalogram (EEG) recordings are essential for diagnosing epilepsy and localizing seizure origins. Artificial intelligence (AI) offers a promising approach to automating detection, but current models are often hindered by artifact-related false positives and often target either event- or EEG-level classification, thus limiting clinical utility.",
+          "authors": [
+            "J Li",
+            "D M Goldenholz",
+            "M Alkofer",
+            "C Sun",
+            "F A Nascimento",
+            "J J Halford",
+            "B C Dean",
+            "M Galanti",
+            "A F Struck",
+            "A S Greenblatt",
+            "A D Lam",
+            "A Herlopian",
+            "C Nwankwo",
+            "D Weber",
+            "D Maus",
+            "H A Haider",
+            "I Karakis",
+            "J Y Yoo",
+            "M C Ng",
+            "O Selioutski",
+            "O Taraschenko",
+            "G Osman",
+            "R Katyal",
+            "S E Schmitt",
+            "S Benbadis",
+            "S S Cash",
+            "W O Tatum",
+            "Z Sheikh",
+            "W Y Kong",
+            "G Bayas",
+            "N Turley",
+            "S Hong",
+            "M B Westover",
+            "J Jing"
+          ],
+          "journal": "NEJM AI",
+          "year": "2025",
+          "pmid": "40689158",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40689158/",
+          "categories": [
+            "neuroimaging",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.698088"
+        },
+        {
+          "title": "An Efficient Deep Learning Framework for Automated Epileptic Seizure Detection: Toward Scalable and Clinically Applicable Solutions.",
+          "abstract": "In this study, we present an efficient epileptic seizure detection framework driven by a graph convolutional neural network (GCNN). Unlike conventional methods that primarily rely on local features or complex feature engineering, our GCNN-based approach explicitly encodes the spatial dependencies among electroencephalogram (EEG) electrodes, thereby capturing more comprehensive spatiotemporal features. A minimal preprocessing pipeline, consisting only of bandpass filtering and segmenting, reduces system complexity and computational overhead. On the CHB-MIT scalp EEG database, our method achieved an average accuracy of 98.64%, sensitivity of 99.49%, and specificity of 98.64% at the segment-based level and sensitivity of 96.81% with FDR of 0.27/h at the event-based level. On the SH-SDU database we collected, the method yielded segment-based accuracy of 95.23%, sensitivity of 92.42%, and specificity of 95.25%, along with event-based sensitivity of 94.11%. The average testing time for 1 h of multi-channel EEG signals is 3.89 s. These excellent results and low-computation design make the framework especially suited for clinical applications, advancing EEG-based epilepsy diagnostics and improving patient outcomes.",
+          "authors": [
+            "Dezan Ji",
+            "Haozhou Cui",
+            "Haotian Li",
+            "Guoyang Liu",
+            "Zhen Liu",
+            "Wei Shang",
+            "Yi Li",
+            "Weidong Zhou"
+          ],
+          "journal": "Developmental neurobiology",
+          "year": "2025",
+          "pmid": "40620110",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40620110/",
+          "categories": [
+            "neuroimaging",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [
+            "cnn",
+            "gnn",
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.698187"
+        },
+        {
+          "title": "EEG-derived brain connectivity in theta/alpha frequency bands increases during reading of individual words.",
+          "abstract": null,
+          "authors": [
+            "Fatemeh Delavari",
+            "Zachary Ekves",
+            "Roeland Hancock",
+            "Gerry T M Altmann",
+            "Sabato Santaniello"
+          ],
+          "journal": "Cognitive neurodynamics",
+          "year": "2025",
+          "pmid": "40519629",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40519629/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.698231"
+        },
+        {
+          "title": "Exploring multidimensional brain mechanisms in robot-assisted surgical simulation.",
+          "abstract": "The introduction of robotic-assisted surgical systems has revolutionized surgical procedures; however, current training programs often overlook the role of brain activity during surgery, making it challenging to detect cognitive differences between surgeons. To address this gap, this paper designed an experimental task closely resembling real surgical scenarios using a robotic surgical simulation system. The study introduced Principal Component Analysis (PCA) weights and Mahalanobis distance as metrics for identifying cognitive differences, with a focus on investigating the brain mechanisms underlying varying levels of surgical proficiency in terms of frequency domain, neural connectivity, and graph theory. Frequency domain analyses revealed that experienced surgeons exhibited greater activation in the alpha bands of the prefrontal cortex (Fp1, Fp2), occipital cortex (O1, O2), and midline parietal cortex (Pz) during task execution, compared to less experienced surgeons. Connectivity analysis indicated that high-level surgeons demonstrated superior neural efficiency, characterized by weaker localized activity but enhanced global integration of brain regions. Graph theoretical analyses further highlighted differences in network organization, with higher-level surgeons achieving a balanced interplay between local specialization and global integration of brain networks. Finally, classification and ablation experiments confirmed that the EEG features identified in this study effectively differentiate surgeons based on their operational expertise. These findings provide valuable insights into the underlying brain mechanisms involved in surgical proficiency and offer potential applications for supporting surgeon training and objective assessment of surgical skills. This research paves the way for the development of more targeted training programs for robotic surgery, ultimately enhancing the effectiveness of skill development and performance evaluation.",
+          "authors": [
+            "Haoxin Cui",
+            "Yujing Liang",
+            "Fankai Sun",
+            "Desheng Li",
+            "Xiangqing Wang",
+            "Rong Wang",
+            "Nan Zheng"
+          ],
+          "journal": "NeuroImage",
+          "year": "2025",
+          "pmid": "40499745",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40499745/",
+          "categories": [
+            "surgical_ai",
+            "neuroimaging",
+            "brain_connectivity"
+          ],
+          "models_mentioned": [
+            "gan",
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.698376"
+        },
+        {
+          "title": "An Explainable Connectome Convolutional Transformer for Multimodal Autism Spectrum Disorder Classification.",
+          "abstract": "The diagnosis of autism spectrum disorder (ASD) is often hampered by its heterogeneity and reliance on time-consuming behavioral assessments. Automated neuroimaging-based diagnostic tools offer a promising alternative, but multi-site data integration often introduces variability, hindering the achievement of accurate and interpretable results. This study presents the Connectome Convolutional Transformer (CCTF), a multimodal deep learning framework that integrates functional and structural brain connectivity information from fMRI and sMRI modalities. The CCTF enriches feature representation by incorporating diverse functional connectivity metrics and structural covariance networks based on multiple morphological properties. It employs a connectome convolutional embedding module and transformer encoder to capture and refine brain connectivity patterns. In addition, a node-to-graph pooling layer facilitates the identification of potential ASD biomarkers. Evaluation on the multi-site ABIDE dataset demonstrated that CCTF outperformed state-of-the-art methods, achieving accuracies of [Formula: see text] for fMRI, [Formula: see text] for sMRI, and [Formula: see text] for the ensemble fMRI+sMRI model in intra-site cross-validation. In the inter-site leave-one-site-out cross-validation, the CCTF maintained its superiority, with the ensemble model reaching [Formula: see text] accuracy, underscoring its robustness and generalizability across different sites. The identified brain regions are consistent with established ASD neurobiology, underscoring CCTF's potential to advance the understanding of the neural mechanisms underlying this complex disorder.",
+          "authors": [
+            "Reza Nazari",
+            "Mostafa Salehi",
+            "Afshin Shoeibi"
+          ],
+          "journal": "International journal of neural systems",
+          "year": "2025",
+          "pmid": "40621646",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40621646/",
+          "categories": [
+            "neuroimaging",
+            "diagnosis_prediction",
+            "brain_connectivity"
+          ],
+          "models_mentioned": [
+            "transformer",
+            "cnn",
+            "vit",
+            "multimodal"
+          ],
+          "processed_date": "2025-07-30T07:07:43.698467"
+        },
+        {
+          "title": "NeuroEmo: A neuroimaging-based fMRI dataset to extract temporal affective brain dynamics for Indian movie video clips stimuli using dynamic functional connectivity approach with graph convolution neural network (DFC-GCNN).",
+          "abstract": "FMRI, a non-invasive neuroimaging technique, can detect emotional brain activation patterns. It allows researchers to observe functional changes in the brain, making it a valuable tool for emotion recognition. For improved emotion recognition systems, it becomes crucial to understand the neural mechanisms behind emotional processing in the brain. There have been multiple studies across the world on the same, however, research on fMRI-based emotion recognition within the Indian population remains scarce, limiting the generalizability of existing models. To address this gap, a culturally relevant neuroimaging dataset has been created https://openneuro.org/datasets/ds005700 for identifying five emotional states i.e., calm, afraid, delighted, depressed and excited-in a diverse group of Indian participants. To ensure cultural relevance, emotional stimuli were derived from Bollywood movie clips. This study outlines the fMRI task design, experimental setup, data collection procedures, preprocessing steps, statistical analysis using the General Linear Model (GLM), and region-of-interest (ROI)-based dynamic functional connectivity (DFC) extraction using parcellation based on the Power et al. (2011) functional atlas. A supervised emotion classification model has been proposed using a Graph Convolutional Neural Network (GCNN), where graph structures were constructed from DFC matrices at varying thresholds. The DFC-GCNN model achieved an impressive 95% classification accuracy across 5-fold cross-validation, highlighting emotion-specific connectivity dynamics in key affective regions, including the amygdala, prefrontal cortex, and anterior insula. These findings emphasize the significance of temporal variability in emotional state classification. By introducing a culturally specific neuroimaging dataset and a GCNN-based emotion recognition framework, this research enhances the applicability of graph-based models for identifying region-wise connectivity patterns in fMRI data. It also offers novel insights into cross-cultural differences in emotional processing at the neural level. Furthermore, the high spatial and temporal resolution of the fMRI dataset provides a valuable resource for future studies in emotional neuroscience and related disciplines.",
+          "authors": [
+            "Abgeena Abgeena",
+            "Shruti Garg",
+            "Nishant Goyal",
+            "Jusitn Raj P C"
+          ],
+          "journal": "Computers in biology and medicine",
+          "year": "2025",
+          "pmid": "40513479",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40513479/",
+          "categories": [
+            "neuroimaging",
+            "brain_connectivity"
+          ],
+          "models_mentioned": [
+            "cnn",
+            "gnn",
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.698620"
+        },
+        {
+          "title": "Efficient sleep apnea detection using single-lead ECG: A CNN-Transformer-LSTM approach.",
+          "abstract": "Sleep apnea (SA), a prevalent sleep-related breathing disorder, disrupts normal respiratory patterns during sleep. This disruption can have a cascading effect on the body, potentially leading to complications in various organs, including the heart, brain, and lungs. Due to the potential for these complications, early and accurate detection of SA is critical. Electrocardiograms (ECG), due to their ability to continuously monitor heart rhythms and detect subtle changes in cardiac activity, such as heart rate variability and arrhythmias, which are often linked to sleep disruptions, have become crucial in identifying individuals at risk for SA.",
+          "authors": [
+            "Duc Thien Pham",
+            "Roman Mou\u010dek"
+          ],
+          "journal": "Computers in biology and medicine",
+          "year": "2025",
+          "pmid": "40614517",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40614517/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "transformer",
+            "cnn",
+            "rnn",
+            "gan",
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.698679"
+        },
+        {
+          "title": "PhyTransformer: A unified framework for learning spatial-temporal representation from physiological signals.",
+          "abstract": "As a modal of physiological information, electroencephalogram (EEG), surface electromyography (sEMG), and eye tracking (ET) signals are widely used to decode human intention, promoting the development of human-computer interaction systems. Extensive studies have achieved single-modal signal decoding with substantial structural differences but consuming mass computing resources and development costs. Considering the similarity in data structure and features, this work proposed a unified framework called PhyTransformer that extracts temporal dynamic and complex channel relationships to decode the physiological signals generally. Concretely, PhyTransformer uses a stacked distillation convolution to capture the complementary temporal dynamic representation from local to global. Considering the information fusion between different channels, our method regards the temporal dynamic of each channel as a token and feeds them into the multi-head attention network to model the complex channel relationship. Subsequently, to measure the channel contributions and fuse the representations from different convolution kernels, PhyTransformer adopts a depth-wise and a separable-wise convolution to extract the final spatial-temporal representation. The proposed method has been evaluated on six publicly benchmarked datasets for physiological signal classification, namely THU and GIST for EEG, Ninapro DB 1 and 6 for sEMG, and GazeCom and HMR for ET. Experiment results illustrate that the proposed method PhyTransformer has the ability to learn robust spatial-temporal representations from multiple modal physiological signals. The code is available at https://github.com/Tammie-Li/PhyTransformer.",
+          "authors": [
+            "Hongxin Li",
+            "Yaru Liu",
+            "Kun Liu",
+            "Yuke Qu",
+            "Wei Dai",
+            "Jingsheng Tang",
+            "Zongtan Zhou"
+          ],
+          "journal": "Neural networks : the official journal of the International Neural Network Society",
+          "year": "2025",
+          "pmid": "40414150",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40414150/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "transformer",
+            "cnn"
+          ],
+          "processed_date": "2025-07-30T07:07:43.698800"
+        },
+        {
+          "title": "S2LIC: Learned image compression with the SwinV2 block, Adaptive Channel-wise and Global-inter attention Context.",
+          "abstract": "Recently, deep learning technology has been successfully applied in the field of image compression, leading to superior rate-distortion performance. It is crucial to design an effective and efficient entropy model to estimate the probability distribution of the latent representation. However, the majority of entropy models primarily focus on one-dimensional correlation processing between channel and spatial information. In this paper, we propose an Adaptive Channel-wise and Global-inter attention Context (ACGC) entropy model, which can efficiently achieve dual feature aggregation in both inter-slice and intra-slice contexts. Specifically, we divide the latent representation into different slices and then apply the ACGC model in a parallel checkerboard context to achieve faster decoding speed and higher rate-distortion performance. We utilize deformable attention in adaptive global-inter slices context to dynamically refine the attention weights based on the actual spatial correlation and context. Furthermore, in the main transformation structure, we introduce the Residual SwinV2 Transformer model to capture global feature information and utilize a dense block network as the feature enhancement module to improve the nonlinear representation of the image within the transformation structure. Experimental results demonstrate that our method achieves faster encoding and decoding speeds, with only 0.31 and 0.38 s, respectively. Additionally, our approach outperforms VTM-17.1 and some recent learned image compression methods in terms of PSNR metrics, reducing BD-Rate by 8.87%, 10.15% and 7.48% on three different datasets (i.e., Kodak, Tecnick and CLIC Pro). Our code will be available at https://github.com/wyq2021/S2LIC.git.",
+          "authors": [
+            "Yongqiang Wang",
+            "Haisheng Fu",
+            "Qi Cao",
+            "Shang Wang",
+            "Zhenjiao Chen",
+            "Feng Liang"
+          ],
+          "journal": "Neural networks : the official journal of the International Neural Network Society",
+          "year": "2025",
+          "pmid": "40398182",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40398182/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "transformer"
+          ],
+          "processed_date": "2025-07-30T07:07:43.698923"
+        },
+        {
+          "title": "Progressive fine-to-coarse reconstruction for accurate low-bit post-training quantization in vision transformers.",
+          "abstract": "Due to its efficiency, Post-Training Quantization (PTQ) has been widely adopted for compressing Vision Transformers (ViTs). However, when quantized into low-bit representations, there is often a significant performance drop compared to their full-precision counterparts. To address this issue, reconstruction methods have been incorporated into the PTQ framework to improve performance in low-bit quantization settings. Nevertheless, existing related methods apply the single and fixed reconstruction granularity and seldom explore the progressive relationships between different reconstruction granularities, which leads to sub-optimal quantization results in ViTs. To this end, in this paper, we propose a Progressive Fine-to-Coarse Reconstruction (PFCR) method for accurate PTQ, which significantly improves the performance of low-bit quantized vision transformers. Specifically, we define multi-head self-attention and multi-layer perceptron modules along with their shortcuts as the finest reconstruction units. After reconstructing these two fine-grained units, we combine them to form coarser blocks and reconstruct them at a coarser granularity level. We iteratively perform this combination and reconstruction process, achieving progressive fine-to-coarse reconstruction. Additionally, we introduce a Progressive Optimization Strategy (POS) for PFCR to alleviate the difficulty of training, thereby further enhancing model performance. Experimental results on the ImageNet dataset demonstrate that our proposed method achieves the best Top-1 accuracy among state-of-the-art methods, particularly attaining 75.61% for 3-bit quantized ViT-B in PTQ. Besides, quantization results on the COCO dataset reveal the effectiveness and generalization of our proposed method on other computer vision tasks like object detection and instance segmentation.",
+          "authors": [
+            "Rui Ding",
+            "Liang Yong",
+            "Sihuan Zhao",
+            "Jing Nie",
+            "Lihui Chen",
+            "Haijun Liu",
+            "Xichuan Zhou"
+          ],
+          "journal": "Neural networks : the official journal of the International Neural Network Society",
+          "year": "2025",
+          "pmid": "40382990",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40382990/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "transformer",
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699028"
+        },
+        {
+          "title": "A pipeline for enabling Nearshore Infrared Video Super-resolution to learn more high-frequency foreground information.",
+          "abstract": "A key challenge in Nearshore Infrared Video Super-resolution (NIVSR) is the limited high-frequency foreground information. The most common approach is to fuse frames in order to learn cross-temporal information. However, existing methods struggle to achieve pixel-level reconstruction of foreground features in infrared video with limited detail. This factor is further amplified due to the transformation of the image into patches in the Super-Resolution (SR) process. This paper presents a novel spatial and temporal network, TASNet, designed to improve reconstruction quality. TASNet models the video in terms of both spatial and temporal features, facilitating their interaction. The Efficient Foreground Information Perception (EFIP) module leverages feature variations to emphasize foreground information in the current frame. Temporal-Difference Learning (TDL) learns information from different frames and integrates it using learnable weights. Additionally, a strategy utilizing the long-context comprehension of Visual Transformers (ViT) is introduced to mitigate temporal discrepancies between frames. The method is simple, robust, and surpasses State-of-the-art (SOTA) techniques in benchmark experiments (TASNet: 28.33 Peak Signal-to-Noise Ratio (PSNR), 0.9122 Structural Similarity Index Measure (SSIM); RBPN: 27.27 PSNR, 0.9024 (SSIM). The source code is in the https://github.com/Yuanlin-Zhao/TASNet.",
+          "authors": [
+            "Yuanlin Zhao",
+            "Wei Li",
+            "Jiangang Ding",
+            "Yansong Wang",
+            "Yihui Shan",
+            "Lili Pei"
+          ],
+          "journal": "Neural networks : the official journal of the International Neural Network Society",
+          "year": "2025",
+          "pmid": "40349427",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40349427/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "transformer",
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699121"
+        },
+        {
+          "title": "Multiparametric MRI-based machine learning system of molecular subgroups and prognosis in medulloblastoma.",
+          "abstract": "We aimed to use artificial intelligence to accurately identify molecular subgroups of medulloblastoma (MB), predict clinical outcomes, and incorporate deep learning-based imaging features into the risk stratification.",
+          "authors": [
+            "Ziyang Liu",
+            "Sikang Ren",
+            "Heng Zhang",
+            "Zhiyi Liao",
+            "Zhiming Liu",
+            "Xu An",
+            "Jian Cheng",
+            "Chunde Li",
+            "Jian Gong",
+            "Haijun Niu",
+            "Jing Jing",
+            "Zixiao Li",
+            "Tao Liu",
+            "Yongji Tian"
+          ],
+          "journal": "European radiology",
+          "year": "2025",
+          "pmid": "39883158",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39883158/",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.699155"
+        },
+        {
+          "title": "Deep Learning to Differentiate Parkinsonian Syndromes Using Multimodal Magnetic Resonance Imaging: A Proof-of-Concept Study.",
+          "abstract": "The differentiation between multiple system atrophy (MSA) and Parkinson's disease (PD) based on clinical diagnostic criteria can be challenging, especially at an early stage. Leveraging deep learning methods and magnetic resonance imaging (MRI) data has shown great potential in aiding automatic diagnosis.",
+          "authors": [
+            "Giulia Maria Mattia",
+            "Lydia Chougar",
+            "Alexandra Foubert-Samier",
+            "Wassilios G Meissner",
+            "Margherita Fabbri",
+            "Anne Pavy-Le Traon",
+            "Olivier Rascol",
+            "David Grabli",
+            "Bertrand Degos",
+            "Nadya Pyatigorskaya",
+            "Alice Faucher",
+            "Marie Vidailhet",
+            "Jean-Christophe Corvol",
+            "St\u00e9phane Leh\u00e9ricy",
+            "Patrice P\u00e9ran"
+          ],
+          "journal": "Movement disorders : official journal of the Movement Disorder Society",
+          "year": "2025",
+          "pmid": "40704399",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40704399/",
+          "categories": [
+            "neuroimaging",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [
+            "multimodal"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699193"
+        },
+        {
+          "title": "PETFormer-SCL: a supervised contrastive learning-guided CNN-transformer hybrid network for Parkinsonism classification from FDG-PET.",
+          "abstract": "Accurate differentiation of Parkinsonism subtypes-including Parkinson's disease (PD), multiple system atrophy (MSA), and progressive supranuclear palsy (PSP)-is essential for clinical prognosis and treatment planning. However, this remains a major challenge due to overlapping symptomatology and high inter-individual variability in cerebral glucose metabolism patterns observed on fluorodeoxyglucose positron emission tomography (FDG-PET).",
+          "authors": [
+            "Shaoyou Wu",
+            "Chenyang Li",
+            "Jiaying Lu",
+            "Jingjie Ge",
+            "Jing Wang",
+            "Chuantao Zuo",
+            "Zhilin Zhang",
+            "Jiehui Jiang"
+          ],
+          "journal": "Annals of nuclear medicine",
+          "year": "2025",
+          "pmid": "40660058",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40660058/",
+          "categories": [
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [
+            "transformer",
+            "cnn"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699238"
+        },
+        {
+          "title": "Motor imagery EEG signal classification using novel deep learning algorithm.",
+          "abstract": "Electroencephalography (EEG) signal classification plays a critical role in various biomedical and cognitive research applications, including neurological disorder detection and cognitive state monitoring. However, these technologies face challenges and exhibit reduced performances due to signal noise, inter-subject variability, and real-time processing demands. Thus, to overcome these limitations a novel model is presented in this research work for motor imagery (MI) EEG signal classification. To begin, the preprocessing stage of the proposed approach includes an innovative hybrid approach that combines empirical mode decomposition (EMD) for extracting intrinsic signal modes. In addition to that, continuous wavelet transform (CWT) is used for multi-resolution analysis. For spatial feature enhancement the proposed approach utilizes source power coherence (SPoC) integrated with common spatial patterns (CSP) for robust feature extraction. For final feature classification, an adaptive deep belief network (ADBN) is proposed. To attain enhanced performance the parameters of the classifier network are optimized using the Far and near optimization (FNO) algorithm. This combined approach provides superior classification accuracy and adaptability to diverse conditions in EEG signal analysis. The evaluations of the proposed approach were conducted using benchmark BCI competition IV Dataset 2a and Physionet dataset. On the BCI dataset, the proposed approach achieves 95.7% accuracy, 96.2% recall, 95.9% precision, and 97.5% specificity. In addition, it delivers 94.1% accuracy, 94.0% recall, 93.6% precision, and 95.0% specificity on the PhysioNet dataset. With better results, the proposed model attained superior performance compared to existing methods such as CNN, LSTM, and BiLSTM algorithms.",
+          "authors": [
+            "Sathish Mathiyazhagan",
+            "M S Geetha Devasena"
+          ],
+          "journal": "Scientific reports",
+          "year": "2025",
+          "pmid": "40628758",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40628758/",
+          "categories": [
+            "neural_implants",
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "cnn",
+            "rnn"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699342"
+        },
+        {
+          "title": "Optimizing the early diagnosis of neurological disorders through the application of machine learning for predictive analytics in medical imaging.",
+          "abstract": "Early diagnosis of Neurological Disorders (ND) such as Alzheimer's disease (AD) and Brain Tumors (BT) can be highly challenging since these diseases cause minor changes in the brain's anatomy. Magnetic Resonance Imaging (MRI) is a vital tool for diagnosing and visualizing these ND; however, standard techniques contingent upon human analysis can be inaccurate, require a long-time, and detect early-stage symptoms necessary for effective treatment. Spatial Feature Extraction (FE) has been improved by Convolutional Neural Networks (CNN) and hybrid models, both of which are changes in Deep Learning (DL). However, these analysis methods frequently fail to accept temporal dynamics, which is significant for a complete test. The present investigation introduces the STGCN-ViT, a hybrid model that integrates CNN\u2009+\u2009Spatial-Temporal Graph Convolutional Networks (STGCN)\u2009+\u2009Vision Transformer (ViT) components to address these gaps. The model causes the reference to EfficientNet-B0 for FE in space, STGCN for FE in time, and ViT for FE using AM. By applying the Open Access Series of Imaging Studies (OASIS)\u00a0and Harvard Medical School (HMS) benchmark datasets, the recommended approach proved effective in the investigations, with Group A attaining an accuracy of 93.56%, a precision of 94.41% and an Area under the Receiver Operating Characteristic Curve (AUC-ROC) score of 94.63%. Compared with standard and transformer-based models, the model attains better results for Group B, with an accuracy of 94.52%, precision of 95.03%, and AUC-ROC score of 95.24%. Those results support the model's use in real-time medical applications by providing proof of the probability of accurate but early-stage ND diagnosis.",
+          "authors": [
+            "Vijaya Bhaskar Sadu",
+            "Sathvik Bagam",
+            "Mohd Naved",
+            "Siva Krishna Reddy Andluru",
+            "Kamalakar Ramineni",
+            "Meshal Ghalib Alharbi",
+            "Sudhakar Sengan",
+            "Rahmaan Khadhar Moideen"
+          ],
+          "journal": "Scientific reports",
+          "year": "2025",
+          "pmid": "40594215",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40594215/",
+          "categories": [
+            "neuroimaging",
+            "diagnosis_prediction"
+          ],
+          "models_mentioned": [
+            "transformer",
+            "cnn",
+            "gnn",
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699452"
+        },
+        {
+          "title": "Flow Matching Policy Gradients",
+          "abstract": "Flow-based generative models, including diffusion models, excel at modeling\ncontinuous distributions in high-dimensional spaces. In this work, we introduce\nFlow Policy Optimization (FPO), a simple on-policy reinforcement learning\nalgorithm that brings flow matching into the policy gradient framework. FPO\ncasts policy optimization as maximizing an advantage-weighted ratio computed\nfrom the conditional flow matching loss, in a manner compatible with the\npopular PPO-clip framework. It sidesteps the need for exact likelihood\ncomputation while preserving the generative capabilities of flow-based models.\nUnlike prior approaches for diffusion-based reinforcement learning that bind\ntraining to a specific sampling method, FPO is agnostic to the choice of\ndiffusion or flow integration at both training and inference time. We show that\nFPO can train diffusion-style policies from scratch in a variety of continuous\ncontrol tasks. We find that flow-based models can capture multimodal action\ndistributions and achieve higher performance than Gaussian policies,\nparticularly in under-conditioned settings.",
+          "authors": [
+            "David McAllister",
+            "Songwei Ge",
+            "Brent Yi",
+            "Chung Min Kim",
+            "Ethan Weber",
+            "Hongsuk Choi",
+            "Haiwen Feng",
+            "Angjoo Kanazawa"
+          ],
+          "journal": "arXiv",
+          "year": "2025",
+          "arxiv_id": "2507.21053v1",
+          "url": "http://arxiv.org/abs/2507.21053v1",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "diffusion",
+            "multimodal"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699524"
+        },
+        {
+          "title": "Rep-MTL: Unleashing the Power of Representation-level Task Saliency for\n  Multi-Task Learning",
+          "abstract": "Despite the promise of Multi-Task Learning in leveraging complementary\nknowledge across tasks, existing multi-task optimization (MTO) techniques\nremain fixated on resolving conflicts via optimizer-centric loss scaling and\ngradient manipulation strategies, yet fail to deliver consistent gains. In this\npaper, we argue that the shared representation space, where task interactions\nnaturally occur, offers rich information and potential for operations\ncomplementary to existing optimizers, especially for facilitating the\ninter-task complementarity, which is rarely explored in MTO. This intuition\nleads to Rep-MTL, which exploits the representation-level task saliency to\nquantify interactions between task-specific optimization and shared\nrepresentation learning. By steering these saliencies through entropy-based\npenalization and sample-wise cross-task alignment, Rep-MTL aims to mitigate\nnegative transfer by maintaining the effective training of individual tasks\ninstead pure conflict-solving, while explicitly promoting complementary\ninformation sharing. Experiments are conducted on four challenging MTL\nbenchmarks covering both task-shift and domain-shift scenarios. The results\nshow that Rep-MTL, even paired with the basic equal weighting policy, achieves\ncompetitive performance gains with favorable efficiency. Beyond standard\nperformance metrics, Power Law exponent analysis demonstrates Rep-MTL's\nefficacy in balancing task-specific learning and cross-task sharing. The\nproject page is available at HERE.",
+          "authors": [
+            "Zedong Wang",
+            "Siyuan Li",
+            "Dan Xu"
+          ],
+          "journal": "arXiv",
+          "year": "2025",
+          "arxiv_id": "2507.21049v1",
+          "url": "http://arxiv.org/abs/2507.21049v1",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.699626"
+        },
+        {
+          "title": "A Survey of Self-Evolving Agents: On Path to Artificial Super\n  Intelligence",
+          "abstract": "Large Language Models (LLMs) have demonstrated strong capabilities but remain\nfundamentally static, unable to adapt their internal parameters to novel tasks,\nevolving knowledge domains, or dynamic interaction contexts. As LLMs are\nincreasingly deployed in open-ended, interactive environments, this static\nnature has become a critical bottleneck, necessitating agents that can\nadaptively reason, act, and evolve in real time. This paradigm shift -- from\nscaling static models to developing self-evolving agents -- has sparked growing\ninterest in architectures and methods enabling continual learning and\nadaptation from data, interactions, and experiences. This survey provides the\nfirst systematic and comprehensive review of self-evolving agents, organized\naround three foundational dimensions -- what to evolve, when to evolve, and how\nto evolve. We examine evolutionary mechanisms across agent components (e.g.,\nmodels, memory, tools, architecture), categorize adaptation methods by stages\n(e.g., intra-test-time, inter-test-time), and analyze the algorithmic and\narchitectural designs that guide evolutionary adaptation (e.g., scalar rewards,\ntextual feedback, single-agent and multi-agent systems). Additionally, we\nanalyze evaluation metrics and benchmarks tailored for self-evolving agents,\nhighlight applications in domains such as coding, education, and healthcare,\nand identify critical challenges and research directions in safety,\nscalability, and co-evolutionary dynamics. By providing a structured framework\nfor understanding and designing self-evolving agents, this survey establishes a\nroadmap for advancing adaptive agentic systems in both research and real-world\ndeployments, ultimately shedding lights to pave the way for the realization of\nArtificial Super Intelligence (ASI), where agents evolve autonomously,\nperforming at or beyond human-level intelligence across a wide array of tasks.",
+          "authors": [
+            "Huan-ang Gao",
+            "Jiayi Geng",
+            "Wenyue Hua",
+            "Mengkang Hu",
+            "Xinzhe Juan",
+            "Hongzhang Liu",
+            "Shilong Liu",
+            "Jiahao Qiu",
+            "Xuan Qi",
+            "Yiran Wu",
+            "Hongru Wang",
+            "Han Xiao",
+            "Yuhang Zhou",
+            "Shaokun Zhang",
+            "Jiayi Zhang",
+            "Jinyu Xiang",
+            "Yixiong Fang",
+            "Qiwen Zhao",
+            "Dongrui Liu",
+            "Qihan Ren",
+            "Cheng Qian",
+            "Zhenghailong Wang",
+            "Minda Hu",
+            "Huazheng Wang",
+            "Qingyun Wu",
+            "Heng Ji",
+            "Mengdi Wang"
+          ],
+          "journal": "arXiv",
+          "year": "2025",
+          "arxiv_id": "2507.21046v1",
+          "url": "http://arxiv.org/abs/2507.21046v1",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "gan"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699742"
+        },
+        {
+          "title": "Emergence of a Boundary-Sensitive Phase in Hyperbolic Ising Models",
+          "abstract": "Physical systems defined on hyperbolic lattices may exhibit phases of matter\nthat only emerge due to negative curvature. We focus on the case of the Ising\nmodel under open boundary conditions and show that an ``intermediate'' phase\nemerges in addition to standard (high-temperature) paramagnetic and\n(low-temperature) ferromagnetic phases. When performing the Kramers-Wannier\nduality the fact that it alters boundary conditions becomes crucial, since a\nfinite fraction of lattice sites lie on the boundary. We propose to\ncharacterize this ``intermediate'' phase by its sensitivity to boundary\nconditions, wherein bulk ordering is not spontaneous but rather induced by\nboundary effects, setting it apart from the Landau paradigm of spontaneous\nsymmetry breaking. By developing a $\\mathbb{Z}_2$ symmetry restricted extension\nof the Corner Transfer Matrix Renormalization Group method, we provide\nnumerical evidence for the existence of all three distinct phases and their\ncorresponding two-stage phase transitions, thereby establishing the complete\nphase diagram. We also establish how the (spontaneous)\nintermediate-to-ferromagnetic and the (induced) paramagnetic-to-intermediate\ntransition points are related by the Kramers-Wannier duality relation.",
+          "authors": [
+            "Xingzhi Wang",
+            "Zohar Nussinov",
+            "Gerardo Ortiz"
+          ],
+          "journal": "arXiv",
+          "year": "2025",
+          "arxiv_id": "2507.21044v1",
+          "url": "http://arxiv.org/abs/2507.21044v1",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699824"
+        },
+        {
+          "title": "Development and analysis of a secured VoIP system for surveillance\n  activities",
+          "abstract": "Since the 1990s, the telephone has been the primary mode of communication.\nHowever, Voice over Internet Protocol (VoIP), which is a highly straightforward\nand affordable form of data transfer, is now becoming an important part of\ndaily communication. VoIP is the technology that makes it possible to send\nspeech and multimedia data packets across either a public or private IP\nnetwork. However, a cyberattack known as a man-in-the-middle attack poses a\nserious concern in transferring data through any network. Therefore, the\nauthors have designed a system that sends voice over the internet within the\nrange of a router using encrypted data transfer. An embedded system comprising\nan electret microphone, Embedded C, Particle Photon microcontroller, and\nInternet of Things (IoT) technology is developed. Due to its compact size, this\ntype of device may be incorporated into automobiles, surveillance systems, or\ncovert listening tools. The VoIP system gathers sound signals using the MAX9814\nmicrophone, while the Particle Photon microcontroller securely transmits the\ndata. Devices with access can download data from the VoIP systems Transmission\nControl Protocol (TCP) server. The accessed device stores the audio locally and\nuploads the corresponding data to Google Drive. This VoIP system provides a\nsecure method of communication while conserving the integrity of the original\nsignal.",
+          "authors": [
+            "M. Matsive Ali"
+          ],
+          "journal": "arXiv",
+          "year": "2025",
+          "arxiv_id": "2507.21038v2",
+          "url": "http://arxiv.org/abs/2507.21038v2",
+          "categories": [
+            "neuroimaging"
+          ],
+          "models_mentioned": [
+            "vit"
+          ],
+          "processed_date": "2025-07-30T07:07:43.699912"
+        },
+        {
+          "title": "When Brain Foundation Model Meets Cauchy-Schwarz Divergence: A New\n  Framework for Cross-Subject Motor Imagery Decoding",
+          "abstract": "Decoding motor imagery (MI) electroencephalogram (EEG) signals, a key\nnon-invasive brain-computer interface (BCI) paradigm for controlling external\nsystems, has been significantly advanced by deep learning. However, MI-EEG\ndecoding remains challenging due to substantial inter-subject variability and\nlimited labeled target data, which necessitate costly calibration for new\nusers. Many existing multi-source domain adaptation (MSDA) methods\nindiscriminately incorporate all available source domains, disregarding the\nlarge inter-subject differences in EEG signals, which leads to negative\ntransfer and excessive computational costs. Moreover, while many approaches\nfocus on feature distribution alignment, they often neglect the explicit\ndependence between features and decision-level outputs, limiting their ability\nto preserve discriminative structures. To address these gaps, we propose a\nnovel MSDA framework that leverages a pretrained large Brain Foundation Model\n(BFM) for dynamic and informed source subject selection, ensuring only relevant\nsources contribute to adaptation. Furthermore, we employ Cauchy-Schwarz (CS)\nand Conditional CS (CCS) divergences to jointly perform feature-level and\ndecision-level alignment, enhancing domain invariance while maintaining class\ndiscriminability. Extensive evaluations on two benchmark MI-EEG datasets\ndemonstrate that our framework outperforms a broad range of state-of-the-art\nbaselines. Additional experiments with a large source pool validate the\nscalability and efficiency of BFM-guided selection, which significantly reduces\ntraining time without sacrificing performance.",
+          "authors": [
+            "Jinzhou Wu",
+            "Baoping Tang",
+            "Qikang Li",
+            "Yi Wang",
+            "Cheng Li",
+            "Shujian Yu"
+          ],
+          "journal": "arXiv",
+          "year": "2025",
+          "arxiv_id": "2507.21037v1",
+          "url": "http://arxiv.org/abs/2507.21037v1",
+          "categories": [
+            "neural_implants",
+            "neuroimaging"
+          ],
+          "models_mentioned": [],
+          "processed_date": "2025-07-30T07:07:43.700007"
+        }
+      ],
+      "summary": "Analyzed 45 papers this week. Top research areas: neuroimaging, diagnosis_prediction, neuromodulation Most mentioned models: vit, cnn, transformer",
+      "status": "completed",
+      "completion_date": "2025-07-30T07:07:43.700169"
+    }
+  ],
+  "categories": {
+    "neural_implants": {
+      "description": "Brain-computer interfaces, cochlear implants, and neural prosthetics",
+      "keywords": [
+        "BCI",
+        "neural implant",
+        "cochlear",
+        "prosthetic",
+        "electrode array"
+      ]
+    },
+    "surgical_ai": {
+      "description": "AI models for surgical planning, navigation, and intraoperative assistance",
+      "keywords": [
+        "surgical AI",
+        "navigation",
+        "robotic surgery",
+        "computer-aided surgery"
+      ]
+    },
+    "neuroimaging": {
+      "description": "Deep learning in MRI, fMRI, CT, and other brain imaging modalities",
+      "keywords": [
+        "neuroimaging",
+        "MRI",
+        "fMRI",
+        "CT",
+        "image segmentation",
+        "anomaly detection"
+      ]
+    },
+    "neuromodulation": {
+      "description": "DBS, TMS, and other neural stimulation technologies",
+      "keywords": [
+        "DBS",
+        "deep brain stimulation",
+        "TMS",
+        "neuromodulation",
+        "stimulation parameters"
+      ]
+    },
+    "diagnosis_prediction": {
+      "description": "ML models for neurological disease diagnosis and prognosis",
+      "keywords": [
+        "diagnosis",
+        "prediction",
+        "Alzheimer",
+        "Parkinson",
+        "epilepsy",
+        "biomarkers"
+      ]
+    },
+    "brain_connectivity": {
+      "description": "Graph neural networks and connectivity analysis",
+      "keywords": [
+        "graph neural network",
+        "connectome",
+        "brain network",
+        "functional connectivity"
+      ]
+    }
+  },
+  "model_architectures": {
+    "tracked_models": [
+      "Transformer variants for neural signal processing",
+      "Graph Neural Networks (GNNs) for brain connectivity",
+      "Convolutional Neural Networks for neuroimaging",
+      "Recurrent Neural Networks for time-series neural data",
+      "Generative Adversarial Networks for synthetic neural data",
+      "Diffusion models for brain image generation",
+      "Vision Transformers for medical imaging",
+      "Multimodal architectures for combining neural signals"
+    ]
+  },
+  "metrics": {
+    "total_papers_reviewed": 45,
+    "active_research_areas": 6,
+    "average_papers_per_week": 0,
+    "trending_keywords": []
+  }
+}

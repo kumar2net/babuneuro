@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Papers - Neuro-Frontiers</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e5e7eb;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #9ca3af;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b7280;
+        }
+
+        /* Hamburger menu styles */
+        .hamburger {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            transition: all 0.25s;
+            position: relative;
+        }
+        
+        .hamburger-top,
+        .hamburger-middle,
+        .hamburger-bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 2px;
+            background: white;
+            transform: rotate(0);
+            transition: all 0.5s;
+        }
+        
+        .hamburger-middle {
+            transform: translateY(7px);
+        }
+        
+        .hamburger-bottom {
+            transform: translateY(14px);
+        }
+        
+        .open .hamburger-top {
+            transform: rotate(45deg) translateY(6px) translateX(6px);
+        }
+        
+        .open .hamburger-middle {
+            display: none;
+        }
+        
+        .open .hamburger-bottom {
+            transform: rotate(-45deg) translateY(6px) translateX(-6px);
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            z-index: 1000;
+            transition: left 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .mobile-menu.open {
+            left: 0;
+        }
+        
+        .mobile-menu a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            text-decoration: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.open a {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .mobile-menu.open a:nth-child(1) { transition-delay: 0.1s; }
+        .mobile-menu.open a:nth-child(2) { transition-delay: 0.2s; }
+
+        /* Feynman explanation modal */
+        .feynman-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            backdrop-filter: blur(5px);
+        }
+        
+        .feynman-modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .feynman-content {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 90vw;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Research paper cards */
+        .paper-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .paper-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-left-color: #3b82f6;
+        }
+        
+        .feynman-btn {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .feynman-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+        }
+
+        /* Category badges */
+        .category-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            margin: 0.125rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .category-neural_implants { background-color: #dbeafe; color: #1e40af; }
+        .category-surgical_ai { background-color: #f3e8ff; color: #7c3aed; }
+        .category-neuroimaging { background-color: #d1fae5; color: #059669; }
+        .category-neuromodulation { background-color: #fef3c7; color: #d97706; }
+        .category-diagnosis_prediction { background-color: #fee2e2; color: #dc2626; }
+        .category-brain_connectivity { background-color: #e0f2fe; color: #0891b2; }
+        .category-other { background-color: #f3f4f6; color: #6b7280; }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header with Hamburger Menu -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white shadow-lg relative z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <a class='text-2xl font-bold' href='/'>Neuro-Frontiers</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a class='hover:text-blue-200 transition-colors' href='/'>Home</a>
+                <a class='text-blue-200 font-semibold' href='/research'>Research</a>
+            </nav>
+            
+            <!-- Mobile Hamburger -->
+            <div class="md:hidden">
+                <button id="hamburger" class="hamburger">
+                    <div class="hamburger-top"></div>
+                    <div class="hamburger-middle"></div>
+                    <div class="hamburger-bottom"></div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <a href='/'>🏠 Home</a>
+        <a href='/research'>📄 Research</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Research Papers</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Latest deep learning research in neurology, neurosurgery, and neural implants. 
+                Click the "🧠 Explain as Feynman" button for simplified explanations.
+            </p>
+        </div>
+
+        <!-- Research Summary Dashboard -->
+        <div id="research-summary" class="mb-8">
+            <!-- This will be populated by JavaScript -->
+        </div>
+
+        <!-- Research Papers Grid -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">📚 Latest Research Papers</h2>
+            <div id="research-papers" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- This will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Feynman Explanation Modal -->
+    <div id="feynman-modal" class="feynman-modal">
+        <div class="feynman-content">
+            <button id="close-feynman" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-gradient-to-r from-pink-400 to-red-400 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-white text-xl">🧠</span>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900">Feynman Explanation</h3>
+                    <p class="text-sm text-gray-600">Complex concepts explained simply</p>
+                </div>
+            </div>
+            <div id="feynman-explanation-content">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center z-50">
+        <div class="text-center">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+            <p class="text-gray-600">Loading research papers...</p>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+        
+        // Close mobile menu when clicking on a link
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                hamburger.classList.remove('open');
+                mobileMenu.classList.remove('open');
+            }
+        });
+
+        // Feynman explanation functionality
+        const feynmanModal = document.getElementById('feynman-modal');
+        const closeFeynman = document.getElementById('close-feynman');
+        const feynmanContent = document.getElementById('feynman-explanation-content');
+        
+        closeFeynman.addEventListener('click', () => {
+            feynmanModal.classList.remove('show');
+        });
+        
+        feynmanModal.addEventListener('click', (e) => {
+            if (e.target === feynmanModal) {
+                feynmanModal.classList.remove('show');
+            }
+        });
+
+        function showFeynmanExplanation(paper) {
+            const explanation = generateFeynmanExplanation(paper);
+            feynmanContent.innerHTML = explanation;
+            feynmanModal.classList.add('show');
+        }
+
+        function generateFeynmanExplanation(paper) {
+            const title = paper.title || 'Research Paper';
+            const categories = paper.categories || [];
+            const models = paper.models_mentioned || [];
+            
+            // Generate simplified explanation based on categories and models
+            let explanation = `
+                <h4 class="text-lg font-semibold mb-4">${title}</h4>
+                <div class="space-y-4 text-gray-700">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h5 class="font-semibold text-blue-900 mb-2">🤔 What is this research about?</h5>
+                        <p>This research is like ${getSimpleAnalogy(categories, models)}.</p>
+                    </div>
+                    
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h5 class="font-semibold text-green-900 mb-2">🧩 How does it work?</h5>
+                        <p>${getMethodExplanation(models)}.</p>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <h5 class="font-semibold text-purple-900 mb-2">💡 Why is this important?</h5>
+                        <p>${getImportanceExplanation(categories)}.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                        <h5 class="font-semibold text-yellow-900 mb-2">🔮 What's next?</h5>
+                        <p>This research could lead to ${getFutureImplications(categories)} in the near future.</p>
+                    </div>
+                </div>
+            `;
+            
+            return explanation;
+        }
+        
+        function getSimpleAnalogy(categories, models) {
+            if (categories.includes('neural_implants')) {
+                return "building a tiny translator that helps your brain talk to computers - like having a universal language interpreter in your head";
+            } else if (categories.includes('surgical_ai')) {
+                return "giving surgeons super-powered eyes and steady hands, like having a GPS and autopilot for brain surgery";
+            } else if (categories.includes('neuroimaging')) {
+                return "teaching computers to read brain scans like a detective finding clues in a mystery photo";
+            } else if (categories.includes('neuromodulation')) {
+                return "fine-tuning your brain's electrical system like adjusting the settings on a sophisticated sound system";
+            } else if (categories.includes('diagnosis_prediction')) {
+                return "training computers to spot early warning signs of brain problems, like having a weather forecast for your neurological health";
+            } else if (categories.includes('brain_connectivity')) {
+                return "mapping how different parts of your brain communicate, like understanding the social network inside your head";
+            } else {
+                return "using artificial intelligence to understand how the brain works";
+            }
+        }
+        
+        function getMethodExplanation(models) {
+            if (models.includes('transformer')) {
+                return "The researchers use AI that pays attention to the most important parts of brain data, like a smart assistant that knows what to focus on";
+            } else if (models.includes('cnn')) {
+                return "They use AI that looks at patterns in brain images, similar to how your eyes recognize faces in photos";
+            } else if (models.includes('gnn')) {
+                return "The AI studies connections between brain regions like mapping friendships in a social network";
+            } else if (models.includes('rnn')) {
+                return "The computer analyzes brain signals over time, like following a conversation to understand the full story";
+            } else {
+                return "The researchers train computers to recognize patterns in brain data, teaching them to 'see' what human experts look for";
+            }
+        }
+        
+        function getImportanceExplanation(categories) {
+            if (categories.includes('neural_implants')) {
+                return "This could help paralyzed people control robotic arms with their thoughts, or help deaf people hear again";
+            } else if (categories.includes('surgical_ai')) {
+                return "Surgeons could operate with incredible precision, reducing risks and improving outcomes for brain surgery patients";
+            } else if (categories.includes('neuroimaging')) {
+                return "Doctors could detect brain diseases much earlier, potentially preventing or slowing conditions like Alzheimer's";
+            } else if (categories.includes('neuromodulation')) {
+                return "People with Parkinson's, depression, or chronic pain could get personalized treatments that work better";
+            } else if (categories.includes('diagnosis_prediction')) {
+                return "We could catch neurological diseases before symptoms appear, giving people a chance to prevent or prepare";
+            } else {
+                return "This research advances our understanding of the brain and improves medical treatments for neurological conditions";
+            }
+        }
+        
+        function getFutureImplications(categories) {
+            const implications = {
+                'neural_implants': "thought-controlled prosthetics and direct brain-computer communication",
+                'surgical_ai': "robot-assisted surgeries that are safer and more precise than human hands",
+                'neuroimaging': "brain scans that can predict diseases years before symptoms appear",
+                'neuromodulation': "personalized brain stimulation treatments for mental health and neurological disorders",
+                'diagnosis_prediction': "early warning systems for brain diseases",
+                'brain_connectivity': "understanding consciousness and treating psychiatric disorders"
+            };
+            
+            const relevantImplications = categories.map(cat => implications[cat]).filter(Boolean);
+            return relevantImplications.length > 0 ? relevantImplications.join(', ') : "better understanding and treatment of brain-related conditions";
+        }
+
+        // Load and display research data
+        async function loadResearchData() {
+            try {
+                const response = await fetch('research_data.json');
+                const data = await response.json();
+                
+                displayResearchSummary(data);
+                displayResearchPapers(data);
+                
+                document.getElementById('loading').style.display = 'none';
+            } catch (error) {
+                console.error('Error loading research data:', error);
+                document.getElementById('loading').innerHTML = `
+                    <div class="text-center">
+                        <p class="text-red-600">Error loading research data. Please refresh the page.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        function displayResearchSummary(data) {
+            const latestCycle = data.research_cycles && data.research_cycles.length > 0 
+                ? data.research_cycles[data.research_cycles.length - 1] 
+                : null;
+            
+            if (!latestCycle) {
+                document.getElementById('research-summary').innerHTML = `
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                        <p class="text-yellow-800">No research data available yet. Please run the research agent first.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            const lastUpdated = new Date(data.last_updated).toLocaleDateString();
+            
+            document.getElementById('research-summary').innerHTML = `
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">📊 Research Summary</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+                        <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                            <div class="text-3xl font-bold text-blue-600">${latestCycle.papers_analyzed || 0}</div>
+                            <div class="text-sm text-gray-600">Papers This Week</div>
+                        </div>
+                        <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                            <div class="text-3xl font-bold text-purple-600">${data.metrics?.total_papers_reviewed || 0}</div>
+                            <div class="text-sm text-gray-600">Total Papers</div>
+                        </div>
+                        <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                            <div class="text-3xl font-bold text-green-600">${Object.keys(data.categories || {}).length}</div>
+                            <div class="text-sm text-gray-600">Research Areas</div>
+                        </div>
+                        <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                            <div class="text-3xl font-bold text-red-600">${data.research_cycles?.length || 0}</div>
+                            <div class="text-sm text-gray-600">Research Cycles</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-2"><strong>Latest Cycle:</strong> ${latestCycle.date_range || 'Unknown'}</p>
+                    <p class="text-gray-700 mb-4">${latestCycle.summary || 'No summary available.'}</p>
+                    <div class="text-sm text-gray-500">Last updated: ${lastUpdated}</div>
+                </div>
+            `;
+        }
+        
+        function displayResearchPapers(data) {
+            const papersContainer = document.getElementById('research-papers');
+            
+            if (!data.research_cycles || data.research_cycles.length === 0) {
+                papersContainer.innerHTML = `
+                    <div class="text-center py-12">
+                        <p class="text-gray-600">No research papers available yet.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            const allPapers = [];
+            data.research_cycles.forEach(cycle => {
+                if (cycle.findings) {
+                    allPapers.push(...cycle.findings);
+                }
+            });
+            
+            if (allPapers.length === 0) {
+                papersContainer.innerHTML = `
+                    <div class="text-center py-12">
+                        <p class="text-gray-600">No research papers found.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            const papersHTML = allPapers.map(paper => {
+                const categories = paper.categories || [];
+                const models = paper.models_mentioned || [];
+                const authors = paper.authors ? paper.authors.slice(0, 2).join(', ') + (paper.authors.length > 2 ? ' et al.' : '') : 'Unknown authors';
+                const primaryCategory = categories[0] || 'other';
+                
+                // Get category icon and color
+                const categoryInfo = {
+                    'neural_implants': { icon: '🧠', color: 'from-blue-400 to-blue-600' },
+                    'surgical_ai': { icon: '🔬', color: 'from-purple-400 to-purple-600' },
+                    'neuroimaging': { icon: '📊', color: 'from-green-400 to-green-600' },
+                    'neuromodulation': { icon: '⚡', color: 'from-yellow-400 to-yellow-600' },
+                    'diagnosis_prediction': { icon: '🔍', color: 'from-red-400 to-red-600' },
+                    'brain_connectivity': { icon: '🌐', color: 'from-indigo-400 to-indigo-600' },
+                    'other': { icon: '📄', color: 'from-gray-400 to-gray-600' }
+                };
+                
+                const catInfo = categoryInfo[primaryCategory] || categoryInfo['other'];
+                const truncatedTitle = (paper.title || 'Untitled').length > 80 ? 
+                    (paper.title || 'Untitled').substring(0, 80) + '...' : (paper.title || 'Untitled');
+                
+                return `
+                    <div class="paper-card p-6 cursor-pointer group">
+                        <!-- Card Header with Icon -->
+                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r ${catInfo.color} rounded-full mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-white text-2xl">${catInfo.icon}</span>
+                        </div>
+                        
+                        <!-- Paper Title -->
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3 text-center leading-tight">
+                            ${paper.url ? `<a href="${paper.url}" target="_blank" class="text-gray-800 hover:text-blue-600 transition-colors">${truncatedTitle}</a>` : truncatedTitle}
+                        </h3>
+                        
+                        <!-- Author and Journal Info -->
+                        <p class="text-sm text-gray-600 text-center mb-4">
+                            ${authors}<br>
+                            <span class="font-medium">${paper.journal || 'Unknown Journal'}</span> (${paper.year || 'Unknown'})
+                        </p>
+                        
+                        <!-- Categories -->
+                        ${categories.length > 0 ? `
+                            <div class="flex flex-wrap justify-center gap-1 mb-4">
+                                ${categories.slice(0, 2).map(cat => `<span class="category-badge category-${cat} text-xs">${cat.replace('_', ' ')}</span>`).join('')}
+                                ${categories.length > 2 ? `<span class="text-xs text-gray-500">+${categories.length - 2} more</span>` : ''}
+                            </div>
+                        ` : ''}
+                        
+                        <!-- Models -->
+                        ${models.length > 0 ? `
+                            <div class="flex flex-wrap justify-center gap-1 mb-4">
+                                ${models.slice(0, 2).map(model => `<span class="px-2 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">${model.toUpperCase()}</span>`).join('')}
+                                ${models.length > 2 ? `<span class="text-xs text-gray-500">+${models.length - 2} more</span>` : ''}
+                            </div>
+                        ` : ''}
+                        
+                        <!-- Feynman Button -->
+                        <div class="text-center mt-4">
+                            <button onclick="showFeynmanExplanation(${JSON.stringify(paper).replace(/"/g, '&quot;')})" 
+                                    class="feynman-btn text-white px-4 py-2 rounded-full text-sm font-semibold w-full transform hover:scale-105 transition-all duration-200">
+                                🧠 Explain as Feynman
+                            </button>
+                        </div>
+                        
+                        <!-- Date Added -->
+                        ${paper.processed_date ? `
+                            <div class="text-xs text-gray-400 text-center mt-3">
+                                Added: ${new Date(paper.processed_date).toLocaleDateString()}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+            
+            papersContainer.innerHTML = papersHTML;
+        }
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', loadResearchData);
+    </script>
+</body>
+</html>
